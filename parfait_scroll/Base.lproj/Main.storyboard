@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="parfait_scroll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feu-2t-D0a">
+                                <rect key="frame" x="0.0" y="44.000000000000014" width="414" height="179.33333333333337"/>
+                                <gestureRecognizers/>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Glass.png" translatesAutoresizingMaskIntoConstraints="NO" id="8EP-XA-oE4">
+                                <rect key="frame" x="0.0" y="243.33333333333337" width="414" height="627"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="feu-2t-D0a" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7lj-rj-yTQ"/>
+                            <constraint firstItem="8EP-XA-oE4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Fnj-rS-Nog"/>
+                            <constraint firstItem="feu-2t-D0a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IVD-rZ-1RN"/>
+                            <constraint firstItem="8EP-XA-oE4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SsS-G9-MYW"/>
+                            <constraint firstItem="feu-2t-D0a" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="UfZ-sc-3lA"/>
+                            <constraint firstItem="feu-2t-D0a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aQD-wg-bUn"/>
+                            <constraint firstItem="8EP-XA-oE4" firstAttribute="top" secondItem="feu-2t-D0a" secondAttribute="bottom" constant="20" id="d7z-jE-c7U"/>
+                            <constraint firstItem="feu-2t-D0a" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="muE-dH-TQr"/>
+                            <constraint firstItem="8EP-XA-oE4" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.7" id="tKP-iG-p2z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="oH7-2F-qgi" appends="YES" id="WTX-i2-jmN"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="scroll" destination="feu-2t-D0a" id="6KY-ap-E8K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="oH7-2F-qgi">
+                    <connections>
+                        <action selector="dragging:" destination="BYZ-38-t0r" id="so5-4Q-nhE"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="354.39999999999998" y="96.7016491754123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Glass.png" width="351" height="561"/>
+    </resources>
+</document>
