@@ -122,7 +122,6 @@ class ViewController: UIViewController {
     }
     
     func refreshGlassContents() {
-        print("New parts set")
         let img = drawGlassContents()
         glassContents.image = img
         for kind: ParfaitPart.Kind in [.Syrup, .BottomIce, .Fruit, .TopIce, .Topping] {
@@ -147,16 +146,15 @@ class ViewController: UIViewController {
     
     func drawGlassContents() -> UIImage {
         UIGraphicsBeginImageContextWithOptions(self.glass.frame.size, false, 0)
-        let ctx = UIGraphicsGetCurrentContext()
+        UIGraphicsGetCurrentContext()
         for kind: ParfaitPart.Kind in [.Syrup, .BottomIce, .Fruit, .TopIce, .Topping] {
             guard let part = currentParts[kind] else { continue }
             let rect = part.getRectRelativeToGlass(glassSize: glassContents.frame.size)
-            ctx!.draw(part.image.cgImage!, in: rect)
+            part.image.draw(in: rect)
         }
-        let img = UIGraphicsGetImageFromCurrentImageContext()
+        let img = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
-        
-        return img!
+        return img
     }
 }
 
