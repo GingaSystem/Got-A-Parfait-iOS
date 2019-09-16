@@ -21,6 +21,7 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         //音楽パート
         do {
+            
             try player = AVAudioPlayer(contentsOf:url)
             try player2 = AVAudioPlayer(contentsOf:url2)
             
