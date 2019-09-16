@@ -21,8 +21,8 @@ class ViewController: UIViewController {
     
     // 現在選択されているパーツ
     var currentParts: Dictionary<ParfaitPart.Kind, ParfaitPart> = [:]
+    var players: [AVAudioPlayer] = []
     
-    var player:AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
                         ParfaitPart.getFruits(),
                         ParfaitPart.getTopIces(),
                         ParfaitPart.getToppings(),
-                        ]
+        ]
         allParts.forEach {
             let pageView = createPickerPage(parts: $0)
             stack.addArrangedSubview(pageView)
@@ -125,6 +125,24 @@ class ViewController: UIViewController {
         print("New parts set")
         let img = drawGlassContents()
         glassContents.image = img
+        for kind: ParfaitPart.Kind in [.Syrup, .BottomIce, .Fruit, .TopIce, .Topping] {
+            guard let part = currentParts[kind] else { continue }
+            let url = Bundle.main.bundleURL.appendingPathComponent(part.trackName)
+            var player:AVAudioPlayer!
+            do {
+                try player = AVAudioPlayer(contentsOf:url)
+                
+                
+                //音楽をバッファに読み込んでおく
+                player.prepareToPlay()
+                
+            } catch {
+                print(error)
+            }
+            players.append(player)
+            player.play()
+        }
+        
     }
     
     func drawGlassContents() -> UIImage {
