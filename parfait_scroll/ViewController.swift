@@ -24,7 +24,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         // パーツ選択スクロールのセットアップ
         setupPickerScrollContentView()
         pickerScroll.isPagingEnabled = true
