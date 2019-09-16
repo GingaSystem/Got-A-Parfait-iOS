@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96FA27FD232F899B00E8181D /* se_maoudamashii_effect10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27EE232F899B00E8181D /* se_maoudamashii_effect10.mp3 */; };
+		96FA27FE232F899B00E8181D /* se_maoudamashii_effect05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27EF232F899B00E8181D /* se_maoudamashii_effect05.mp3 */; };
+		96FA27FF232F899B00E8181D /* se_maoudamashii_effect12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27F0232F899B00E8181D /* se_maoudamashii_effect12.mp3 */; };
+		96FA2800232F899B00E8181D /* se_maoudamashii_effect15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27F1232F899B00E8181D /* se_maoudamashii_effect15.mp3 */; };
+		96FA2801232F899B00E8181D /* se_maoudamashii_effect04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27F2232F899B00E8181D /* se_maoudamashii_effect04.mp3 */; };
+		96FA2802232F899B00E8181D /* se_maoudamashii_effect06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27F3232F899B00E8181D /* se_maoudamashii_effect06.mp3 */; };
+		96FA2803232F899B00E8181D /* se_maoudamashii_effect09.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27F4232F899B00E8181D /* se_maoudamashii_effect09.mp3 */; };
+		96FA2804232F899B00E8181D /* se_maoudamashii_effect01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27F5232F899B00E8181D /* se_maoudamashii_effect01.mp3 */; };
+		96FA2805232F899B00E8181D /* se_maoudamashii_effect03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27F6232F899B00E8181D /* se_maoudamashii_effect03.mp3 */; };
+		96FA2806232F899B00E8181D /* se_maoudamashii_effect13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27F7232F899B00E8181D /* se_maoudamashii_effect13.mp3 */; };
+		96FA2807232F899B00E8181D /* se_maoudamashii_effect07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27F8232F899B00E8181D /* se_maoudamashii_effect07.mp3 */; };
+		96FA2808232F899B00E8181D /* se_maoudamashii_effect14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27F9232F899B00E8181D /* se_maoudamashii_effect14.mp3 */; };
+		96FA2809232F899B00E8181D /* se_maoudamashii_effect02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27FA232F899B00E8181D /* se_maoudamashii_effect02.mp3 */; };
+		96FA280A232F899B00E8181D /* se_maoudamashii_effect11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27FB232F899B00E8181D /* se_maoudamashii_effect11.mp3 */; };
+		96FA280B232F899B00E8181D /* se_maoudamashii_effect08.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27FC232F899B00E8181D /* se_maoudamashii_effect08.mp3 */; };
 		A505FCB4232E1676002B956C /* ParfaitPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A505FCB3232E1676002B956C /* ParfaitPart.swift */; };
 		A505FCCF232E3790002B956C /* BottomIce5.png in Resources */ = {isa = PBXBuildFile; fileRef = A505FCB5232E378E002B956C /* BottomIce5.png */; };
 		A505FCD0232E3790002B956C /* Fruits2.png in Resources */ = {isa = PBXBuildFile; fileRef = A505FCB6232E378E002B956C /* Fruits2.png */; };
@@ -42,6 +57,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96FA27EE232F899B00E8181D /* se_maoudamashii_effect10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect10.mp3; sourceTree = "<group>"; };
+		96FA27EF232F899B00E8181D /* se_maoudamashii_effect05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect05.mp3; sourceTree = "<group>"; };
+		96FA27F0232F899B00E8181D /* se_maoudamashii_effect12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect12.mp3; sourceTree = "<group>"; };
+		96FA27F1232F899B00E8181D /* se_maoudamashii_effect15.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect15.mp3; sourceTree = "<group>"; };
+		96FA27F2232F899B00E8181D /* se_maoudamashii_effect04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect04.mp3; sourceTree = "<group>"; };
+		96FA27F3232F899B00E8181D /* se_maoudamashii_effect06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect06.mp3; sourceTree = "<group>"; };
+		96FA27F4232F899B00E8181D /* se_maoudamashii_effect09.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect09.mp3; sourceTree = "<group>"; };
+		96FA27F5232F899B00E8181D /* se_maoudamashii_effect01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect01.mp3; sourceTree = "<group>"; };
+		96FA27F6232F899B00E8181D /* se_maoudamashii_effect03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect03.mp3; sourceTree = "<group>"; };
+		96FA27F7232F899B00E8181D /* se_maoudamashii_effect13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect13.mp3; sourceTree = "<group>"; };
+		96FA27F8232F899B00E8181D /* se_maoudamashii_effect07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect07.mp3; sourceTree = "<group>"; };
+		96FA27F9232F899B00E8181D /* se_maoudamashii_effect14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect14.mp3; sourceTree = "<group>"; };
+		96FA27FA232F899B00E8181D /* se_maoudamashii_effect02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect02.mp3; sourceTree = "<group>"; };
+		96FA27FB232F899B00E8181D /* se_maoudamashii_effect11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect11.mp3; sourceTree = "<group>"; };
+		96FA27FC232F899B00E8181D /* se_maoudamashii_effect08.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect08.mp3; sourceTree = "<group>"; };
 		A505FCB3232E1676002B956C /* ParfaitPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParfaitPart.swift; sourceTree = "<group>"; };
 		A505FCB5232E378E002B956C /* BottomIce5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BottomIce5.png; sourceTree = "<group>"; };
 		A505FCB6232E378E002B956C /* Fruits2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fruits2.png; sourceTree = "<group>"; };
@@ -122,6 +152,28 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		96FA280D232F89A500E8181D /* Tracks */ = {
+			isa = PBXGroup;
+			children = (
+				96FA27F5232F899B00E8181D /* se_maoudamashii_effect01.mp3 */,
+				96FA27FA232F899B00E8181D /* se_maoudamashii_effect02.mp3 */,
+				96FA27F6232F899B00E8181D /* se_maoudamashii_effect03.mp3 */,
+				96FA27F2232F899B00E8181D /* se_maoudamashii_effect04.mp3 */,
+				96FA27EF232F899B00E8181D /* se_maoudamashii_effect05.mp3 */,
+				96FA27F3232F899B00E8181D /* se_maoudamashii_effect06.mp3 */,
+				96FA27F8232F899B00E8181D /* se_maoudamashii_effect07.mp3 */,
+				96FA27FC232F899B00E8181D /* se_maoudamashii_effect08.mp3 */,
+				96FA27F4232F899B00E8181D /* se_maoudamashii_effect09.mp3 */,
+				96FA27EE232F899B00E8181D /* se_maoudamashii_effect10.mp3 */,
+				96FA27FB232F899B00E8181D /* se_maoudamashii_effect11.mp3 */,
+				96FA27F0232F899B00E8181D /* se_maoudamashii_effect12.mp3 */,
+				96FA27F7232F899B00E8181D /* se_maoudamashii_effect13.mp3 */,
+				96FA27F9232F899B00E8181D /* se_maoudamashii_effect14.mp3 */,
+				96FA27F1232F899B00E8181D /* se_maoudamashii_effect15.mp3 */,
+			);
+			name = Tracks;
+			sourceTree = "<group>";
+		};
 		A56893CC22FF0702009B5640 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				9645F229232F46B4009009DD /* Images */,
+				96FA280D232F89A500E8181D /* Tracks */,
 				A56893D822FF0702009B5640 /* AppDelegate.swift */,
 				A56893DA22FF0702009B5640 /* ViewController.swift */,
 				A505FCB3232E1676002B956C /* ParfaitPart.swift */,
@@ -212,30 +265,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				A505FCDC232E3790002B956C /* Syrup4.png in Resources */,
+				96FA2808232F899B00E8181D /* se_maoudamashii_effect14.mp3 in Resources */,
 				A505FCE0232E3790002B956C /* Topping1.png in Resources */,
 				A505FCD5232E3790002B956C /* Syrup5.png in Resources */,
 				A505FCD8232E3790002B956C /* Topping2.png in Resources */,
 				A505FCDE232E3790002B956C /* BottomIce1.png in Resources */,
+				96FA2801232F899B00E8181D /* se_maoudamashii_effect04.mp3 in Resources */,
 				A505FCD7232E3790002B956C /* TopIce3.png in Resources */,
+				96FA2802232F899B00E8181D /* se_maoudamashii_effect06.mp3 in Resources */,
 				A505FCD2232E3790002B956C /* BottomIce4.png in Resources */,
 				A505FCDF232E3790002B956C /* Fruits4.png in Resources */,
 				A505FCE2232E3790002B956C /* Topping5.png in Resources */,
 				A505FCE4232E3790002B956C /* Fruits3.png in Resources */,
 				A505FCE5232E3790002B956C /* Fruits5.png in Resources */,
 				A505FCD6232E3790002B956C /* TopIce4.png in Resources */,
+				96FA2804232F899B00E8181D /* se_maoudamashii_effect01.mp3 in Resources */,
 				A505FCD3232E3790002B956C /* Topping4.png in Resources */,
+				96FA2809232F899B00E8181D /* se_maoudamashii_effect02.mp3 in Resources */,
+				96FA2805232F899B00E8181D /* se_maoudamashii_effect03.mp3 in Resources */,
 				A505FCDD232E3790002B956C /* Syrup2.png in Resources */,
 				A505FCD4232E3790002B956C /* Syrup1.png in Resources */,
+				96FA2806232F899B00E8181D /* se_maoudamashii_effect13.mp3 in Resources */,
 				A56893E322FF0704009B5640 /* LaunchScreen.storyboard in Resources */,
+				96FA280B232F899B00E8181D /* se_maoudamashii_effect08.mp3 in Resources */,
+				96FA27FD232F899B00E8181D /* se_maoudamashii_effect10.mp3 in Resources */,
+				96FA2807232F899B00E8181D /* se_maoudamashii_effect07.mp3 in Resources */,
 				A505FCD9232E3790002B956C /* TopIce2.png in Resources */,
+				96FA2803232F899B00E8181D /* se_maoudamashii_effect09.mp3 in Resources */,
+				96FA27FF232F899B00E8181D /* se_maoudamashii_effect12.mp3 in Resources */,
 				A56893E022FF0704009B5640 /* Assets.xcassets in Resources */,
 				A505FCE6232E3790002B956C /* BottomIce2.png in Resources */,
 				A505FCD0232E3790002B956C /* Fruits2.png in Resources */,
 				A505FCE8232E3790002B956C /* TopIce5.png in Resources */,
+				96FA280A232F899B00E8181D /* se_maoudamashii_effect11.mp3 in Resources */,
 				A505FCDA232E3790002B956C /* BottomIce3.png in Resources */,
 				A505FCD1232E3790002B956C /* Syrup3.png in Resources */,
+				96FA2800232F899B00E8181D /* se_maoudamashii_effect15.mp3 in Resources */,
 				A505FCDB232E3790002B956C /* Fruits1.png in Resources */,
 				A505FCCF232E3790002B956C /* BottomIce5.png in Resources */,
+				96FA27FE232F899B00E8181D /* se_maoudamashii_effect05.mp3 in Resources */,
 				A505FCE7232E3790002B956C /* Topping3.png in Resources */,
 				A56893DE22FF0702009B5640 /* Main.storyboard in Resources */,
 				A505FCE1232E3790002B956C /* Glass.png in Resources */,
