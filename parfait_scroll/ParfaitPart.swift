@@ -74,7 +74,7 @@ class ParfaitPart{
     static private var nextId: Int = 0
     
     static private var mapping : Dictionary<Int, ParfaitPart> = [:]
-   
+    
     // パーツのID番号
     let id : Int
     
