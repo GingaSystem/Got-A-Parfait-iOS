@@ -43,7 +43,7 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DUv-SS-mZ0" userLabel="GlassContents">
-                                <rect key="frame" x="50.333333333333343" y="234.66666666666669" width="313.33333333333326" height="501.33333333333337"/>
+                                <rect key="frame" x="50.333333333333343" y="234.66666666666666" width="313.33333333333326" height="501.33333333333337"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -65,6 +65,7 @@
                     </view>
                     <connections>
                         <outlet property="Glass" destination="8EP-XA-oE4" id="ak8-G7-TH2"/>
+                        <outlet property="glassContents" destination="DUv-SS-mZ0" id="5jO-MD-e7Q"/>
                         <outlet property="pickerScroll" destination="feu-2t-D0a" id="6KY-ap-E8K"/>
                         <outlet property="pickerScrollContentView" destination="nuF-2Y-31I" id="ijV-Qe-Csx"/>
                     </connections>
