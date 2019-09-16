@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ParfaitPart{//パーツのひとつずつのクラス
+class ParfaitPart{
+    //パーツのひとつずつのクラス
     
     let partImage : UIImage
     let partTrack : String
