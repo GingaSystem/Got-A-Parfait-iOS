@@ -8,8 +8,6 @@
 
 import UIKit
 
-let DEFAULT_GLASS_HEIGHT = 561
-
 class ParfaitPart{
     //パーツのひとつずつのクラス
     
@@ -21,6 +19,7 @@ class ParfaitPart{
         case Syrup
     }
     
+    // 各パーツがグラスに対して上から何pxの位置に描画されるべきかを調整する
     let offset : Dictionary<Kind, CGFloat> = [
         .Topping : 0,
         .TopIce : 30,
@@ -28,6 +27,9 @@ class ParfaitPart{
         .BottomIce : 150,
         .Syrup : 310,
         ]
+    
+    // グラスの画像
+    static private let glass = UIImage(named: "Glass")!
     
     static private let toppings = [
         ParfaitPart(.Topping, "Topping1","se_maoudamashii_effect01.mp3"),
@@ -72,10 +74,17 @@ class ParfaitPart{
     static private var nextId: Int = 0
     
     static private var mapping : Dictionary<Int, ParfaitPart> = [:]
-    
+   
+    // パーツのID番号
     let id : Int
+    
+    // パーツの種類
     let kind : Kind
+    
+    // パーツの画像
     let image : UIImage
+    
+    // パーツに対応するトラックの名前
     let trackName : String
     
     private init(_ kind: Kind, _ imageName : String, _ trackName: String){
@@ -88,23 +97,23 @@ class ParfaitPart{
         ParfaitPart.mapping[self.id] = self
     }
     
-    static func getToppings() -> [ParfaitPart]{
+    static func getToppings() -> [ParfaitPart] {
         return toppings
     }
     
-    static func getTopIces() -> [ParfaitPart]{
+    static func getTopIces() -> [ParfaitPart] {
         return topIces
     }
     
-    static func getFruits() -> [ParfaitPart]{
+    static func getFruits() -> [ParfaitPart] {
         return fruits
     }
     
-    static func getBottomIces() -> [ParfaitPart]{
+    static func getBottomIces() -> [ParfaitPart] {
         return bottomIces
     }
     
-    static func getSyrups() -> [ParfaitPart]{
+    static func getSyrups() -> [ParfaitPart] {
         return syrups
     }
     
@@ -113,7 +122,7 @@ class ParfaitPart{
     }
     
     func getRectRelativeToGlass(glassSize : CGSize) -> CGRect {
-        let ratio = glassSize.height / CGFloat(DEFAULT_GLASS_HEIGHT)
+        let ratio = glassSize.height / ParfaitPart.glass.size.height
         let h = self.image.size.height * ratio
         let w = self.image.size.width * ratio
         let x = ((glassSize.width - w) / 2.0)
