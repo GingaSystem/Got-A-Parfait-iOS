@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var pickerScroll: UIScrollView!
     @IBOutlet weak var pickerScrollContentView: UIView!
     @IBOutlet weak var glass: UIImageView!
+    @IBOutlet weak var glassContents: UIImageView!
     
     // ドラッグされているパーツ
     var partsBeingDragged: ParfaitPart!
@@ -122,13 +123,22 @@ class ViewController: UIViewController {
     
     func refreshGlassContents() {
         print("New parts set")
+        let img = drawGlassContents()
+        glassContents.image = img
     }
     
     func drawGlassContents() -> UIImage {
         UIGraphicsBeginImageContextWithOptions(self.glass.frame.size, false, 0)
+        let ctx = UIGraphicsGetCurrentContext()
+        for kind: ParfaitPart.Kind in [.Syrup, .BottomIce, .Fruit, .TopIce, .Topping] {
+            guard let part = currentParts[kind] else { continue }
+            let rect = part.getRectRelativeToGlass(glassSize: glassContents.frame.size)
+            ctx!.draw(part.image.cgImage!, in: rect)
+        }
+        let img = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        return UIImage()
+        return img!
     }
 }
 

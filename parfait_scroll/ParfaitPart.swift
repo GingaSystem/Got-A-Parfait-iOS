@@ -8,6 +8,8 @@
 
 import UIKit
 
+let DEFAULT_GLASS_HEIGHT = 561
+
 class ParfaitPart{
     //パーツのひとつずつのクラス
     
@@ -18,6 +20,14 @@ class ParfaitPart{
         case BottomIce
         case Syrup
     }
+    
+    let offset : Dictionary<Kind, CGFloat> = [
+        .Topping : 0,
+        .TopIce : 30,
+        .Fruit : 200,
+        .BottomIce : 300,
+        .Syrup : 400,
+        ]
     
     static private let toppings = [
         ParfaitPart(.Topping, "Topping1","se_maoudamashii_effect01.mp3"),
@@ -100,5 +110,15 @@ class ParfaitPart{
     
     static func getPartByID(_ id : Int) -> ParfaitPart {
         return ParfaitPart.mapping[id]!
+    }
+    
+    func getRectRelativeToGlass(glassSize : CGSize) -> CGRect {
+        let ratio = glassSize.height / CGFloat(DEFAULT_GLASS_HEIGHT)
+        let x = ((glassSize.width - self.image.size.width) / 2.0) * ratio
+        let y = offset[self.kind]! * ratio
+        let h = self.image.size.height * ratio
+        let w = self.image.size.width * ratio
+        
+        return CGRect(x: x, y: y, width: w, height: h)
     }
 }
