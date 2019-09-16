@@ -58,11 +58,12 @@ class ViewController: UIViewController{
             stack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             ])
         
-        let allParts = [ParfaitPart.getToppings(),
-                        ParfaitPart.getTopIces(),
-                        ParfaitPart.getFruits(),
+        let allParts = [ParfaitPart.getSyrups(),
                         ParfaitPart.getBottomIces(),
-                        ParfaitPart.getSyrups()]
+                        ParfaitPart.getFruits(),
+                        ParfaitPart.getTopIces(),
+                        ParfaitPart.getToppings()
+                        ]
         allParts.forEach {
             let pageView = createPage(parts: $0)
             stack.addArrangedSubview(pageView)
