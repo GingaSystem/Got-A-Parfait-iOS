@@ -34,8 +34,16 @@ class ViewController: UIViewController {
         
         // グラスにパーツをドラッグしたときの動作を定義する
         let interaction = UIDropInteraction(delegate: self)
-        glass.addInteraction(interaction)
-        glass.isUserInteractionEnabled = true
+        glassContents.addInteraction(interaction)
+        glassContents.isUserInteractionEnabled = true
+        
+        // 初期状態の設定
+        currentParts[.Syrup] = ParfaitPart.getSyrups()[0]
+        currentParts[.BottomIce] = ParfaitPart.getBottomIces()[0]
+        currentParts[.Fruit] = ParfaitPart.getFruits()[0]
+        currentParts[.TopIce] = ParfaitPart.getTopIces()[0]
+        currentParts[.Topping] = ParfaitPart.getToppings()[0]
+        refreshGlassContents()
     }
     
     func setupPickerScrollContentView() {
@@ -145,11 +153,11 @@ class ViewController: UIViewController {
     }
     
     func drawGlassContents() -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(self.glass.frame.size, false, 0)
+        UIGraphicsBeginImageContextWithOptions(self.glassContents.frame.size, false, 0)
         UIGraphicsGetCurrentContext()
         for kind: ParfaitPart.Kind in [.Syrup, .BottomIce, .Fruit, .TopIce, .Topping] {
             guard let part = currentParts[kind] else { continue }
-            let rect = part.getRectRelativeToGlass(glassSize: glassContents.frame.size)
+            let rect = part.getRectRelativeToGlass(glassSize: glass.frame.size)
             part.image.draw(in: rect)
         }
         let img = UIGraphicsGetImageFromCurrentImageContext()!

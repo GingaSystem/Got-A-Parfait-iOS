@@ -21,11 +21,11 @@ class ParfaitPart{
     
     // 各パーツがグラスに対して上から何pxの位置に描画されるべきかを調整する
     let offset : Dictionary<Kind, CGFloat> = [
-        .Topping : 0,
-        .TopIce : 30,
-        .Fruit : 120,
-        .BottomIce : 150,
-        .Syrup : 310,
+        .Topping : 5,
+        .TopIce : 40,
+        .Fruit : 180,
+        .BottomIce : 280,
+        .Syrup : 470,
         ]
     
     // グラスの画像
