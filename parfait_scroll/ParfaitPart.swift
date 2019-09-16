@@ -24,9 +24,9 @@ class ParfaitPart{
     let offset : Dictionary<Kind, CGFloat> = [
         .Topping : 0,
         .TopIce : 30,
-        .Fruit : 200,
-        .BottomIce : 300,
-        .Syrup : 400,
+        .Fruit : 120,
+        .BottomIce : 150,
+        .Syrup : 310,
         ]
     
     static private let toppings = [
@@ -114,11 +114,10 @@ class ParfaitPart{
     
     func getRectRelativeToGlass(glassSize : CGSize) -> CGRect {
         let ratio = glassSize.height / CGFloat(DEFAULT_GLASS_HEIGHT)
-        let x = ((glassSize.width - self.image.size.width) / 2.0) * ratio
-        let y = offset[self.kind]! * ratio
         let h = self.image.size.height * ratio
         let w = self.image.size.width * ratio
-        
+        let x = ((glassSize.width - w) / 2.0)
+        let y = offset[self.kind]! * ratio
         return CGRect(x: x, y: y, width: w, height: h)
     }
 }
