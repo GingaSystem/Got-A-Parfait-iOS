@@ -14,7 +14,13 @@ class ViewController: UIViewController{
     @IBOutlet weak var scrollContentView: UIView!
     var player:AVAudioPlayer!
     var player2:AVAudioPlayer!
-    let url = Bundle.main.bundleURL.appendingPathComponent("parfaitMusicSample.mp3")
+    var player3:AVAudioPlayer!
+    var player4:AVAudioPlayer!
+    var player5:AVAudioPlayer!
+    var player6:AVAudioPlayer!
+    var player7:AVAudioPlayer!
+    
+    let url = Bundle.main.bundleURL.appendingPathComponent(ParfaitPart.getToppings()[1].partTrack)
      let url2 = Bundle.main.bundleURL.appendingPathComponent("roma.mp3")
     
     override func viewDidLoad() {
@@ -49,6 +55,48 @@ class ViewController: UIViewController{
         player2.play()
     }
     
+    @IBAction func playAll(_ sender: UIButton) {
+        
+        
+        
+        
+        let url3 = Bundle.main.bundleURL.appendingPathComponent(ParfaitPart.getToppings()[1].partTrack)
+        let url4 = Bundle.main.bundleURL.appendingPathComponent(ParfaitPart.getTopIces()[1].partTrack)
+        let url5 = Bundle.main.bundleURL.appendingPathComponent(ParfaitPart.getFruits()[1].partTrack)
+        let url6 = Bundle.main.bundleURL.appendingPathComponent(ParfaitPart.getBottomIces()[1].partTrack)
+        let url7 = Bundle.main.bundleURL.appendingPathComponent(ParfaitPart.getSyrups()[1].partTrack)
+        
+        do {
+            
+            try player3 = AVAudioPlayer(contentsOf:url3)
+            try player4 = AVAudioPlayer(contentsOf:url4)
+            try player5 = AVAudioPlayer(contentsOf:url5)
+            try player6 = AVAudioPlayer(contentsOf:url6)
+            try player7 = AVAudioPlayer(contentsOf:url7)
+            
+            
+            
+            //音楽をバッファに読み込んでおく
+            player3.prepareToPlay()
+            player4.prepareToPlay()
+            player5.prepareToPlay()
+            player6.prepareToPlay()
+            player7.prepareToPlay()
+            
+            player3.play()
+            player4.play()
+            player5.play()
+            player6.play()
+            player7.play()
+            
+            
+            
+        } catch {
+            print(error)
+        }
+        
+        
+    }
     @IBAction func stopMusic(_ sender: UIButton) {
         player.stop()
         player2.stop()
