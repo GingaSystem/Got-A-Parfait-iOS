@@ -65,6 +65,7 @@
                     </view>
                     <connections>
                         <outlet property="Glass" destination="8EP-XA-oE4" id="ak8-G7-TH2"/>
+                        <outlet property="glass" destination="8EP-XA-oE4" id="dmu-QH-D3L"/>
                         <outlet property="glassContents" destination="DUv-SS-mZ0" id="5jO-MD-e7Q"/>
                         <outlet property="pickerScroll" destination="feu-2t-D0a" id="6KY-ap-E8K"/>
                         <outlet property="pickerScrollContentView" destination="nuF-2Y-31I" id="ijV-Qe-Csx"/>
