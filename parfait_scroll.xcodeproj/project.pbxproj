@@ -89,23 +89,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A56893CC22FF0702009B5640 = {
-			isa = PBXGroup;
-			children = (
-				A56893D722FF0702009B5640 /* parfait_scroll */,
-				A56893D622FF0702009B5640 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		A56893D622FF0702009B5640 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A56893D522FF0702009B5640 /* parfait_scroll.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A56893D722FF0702009B5640 /* parfait_scroll */ = {
+		9645F229232F46B4009009DD /* Images */ = {
 			isa = PBXGroup;
 			children = (
 				A505FCC4232E378F002B956C /* BottomIce1.png */,
@@ -134,6 +118,30 @@
 				A505FCCD232E3790002B956C /* Topping3.png */,
 				A505FCB9232E378F002B956C /* Topping4.png */,
 				A505FCC8232E3790002B956C /* Topping5.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A56893CC22FF0702009B5640 = {
+			isa = PBXGroup;
+			children = (
+				A56893D722FF0702009B5640 /* parfait_scroll */,
+				A56893D622FF0702009B5640 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A56893D622FF0702009B5640 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A56893D522FF0702009B5640 /* parfait_scroll.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A56893D722FF0702009B5640 /* parfait_scroll */ = {
+			isa = PBXGroup;
+			children = (
+				9645F229232F46B4009009DD /* Images */,
 				A56893D822FF0702009B5640 /* AppDelegate.swift */,
 				A56893DA22FF0702009B5640 /* ViewController.swift */,
 				A505FCB3232E1676002B956C /* ParfaitPart.swift */,
