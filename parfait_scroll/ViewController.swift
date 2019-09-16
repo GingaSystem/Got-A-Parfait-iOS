@@ -7,45 +7,33 @@
 //
 
 import UIKit
-class ViewController: UIViewController{
+class ViewController: UIViewController {
     
-    @IBOutlet weak var scroll: UIScrollView!
-    @IBOutlet weak var scrollContentView: UIView!
+    @IBOutlet weak var pickerScroll: UIScrollView!
+    @IBOutlet weak var pickerScrollContentView: UIView!
+    @IBOutlet weak var glass: UIImageView!
+    
+    // ドラッグされているパーツ
+    var partsBeingDragged: ParfaitPart!
+    
+    // 現在選択されているパーツ
+    var currentParts: Dictionary<ParfaitPart.Kind, ParfaitPart> = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // パーツ選択スクロールのセットアップ
-        setupScrollContentView()
-        scroll.isPagingEnabled = true
+        setupPickerScrollContentView()
+        pickerScroll.isPagingEnabled = true
+        
+        // グラスにパーツをドラッグしたときの動作を定義する
+        let interaction = UIDropInteraction(delegate: self)
+        glass.addInteraction(interaction)
+        glass.isUserInteractionEnabled = true
     }
     
-    @objc func imageTapped(_ sender: UITapGestureRecognizer){
-        
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(self.imageDrag(_:)))
-        let photoView = UIImageView()
-        photoView.frame = CGRect(x:200, y: 200, width: 200, height: 200)
-        photoView.contentMode = .scaleAspectFill
-        photoView.image = (sender.view as! UIImageView).image
-        photoView.isUserInteractionEnabled = true
-        photoView.addGestureRecognizer(panGesture)
-        view.addSubview(photoView)
-        
-        let tagNo = sender.view?.tag
-        print("ハロー", tagNo!)
-    }
-    
-    @objc func imageDrag(_ sender: UIPanGestureRecognizer){
-        sender.view!.center = sender.location(in: self.view)
-        
-    }
-    
-    @IBAction func dragging(_ sender: UIPanGestureRecognizer) {
-        
-    }
-    
-    func setupScrollContentView() {
-        let contentView = scrollContentView!
+    func setupPickerScrollContentView() {
+        let contentView = pickerScrollContentView!
         let stack = UIStackView()
         contentView.addSubview(stack)
         stack.axis = .horizontal
@@ -62,23 +50,23 @@ class ViewController: UIViewController{
                         ParfaitPart.getBottomIces(),
                         ParfaitPart.getFruits(),
                         ParfaitPart.getTopIces(),
-                        ParfaitPart.getToppings()
+                        ParfaitPart.getToppings(),
                         ]
         allParts.forEach {
-            let pageView = createPage(parts: $0)
+            let pageView = createPickerPage(parts: $0)
             stack.addArrangedSubview(pageView)
             pageView.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
-                pageView.widthAnchor.constraint(equalTo: scroll.widthAnchor),
-                pageView.heightAnchor.constraint(equalTo: scroll.heightAnchor),
+                pageView.widthAnchor.constraint(equalTo: pickerScroll.widthAnchor),
+                pageView.heightAnchor.constraint(equalTo: pickerScroll.heightAnchor),
                 ])
         }
         NSLayoutConstraint.activate([
-            contentView.widthAnchor.constraint(equalTo: scroll.widthAnchor, multiplier: CGFloat(allParts.count))
+            contentView.widthAnchor.constraint(equalTo: pickerScroll.widthAnchor, multiplier: CGFloat(allParts.count))
             ])
     }
     
-    func createPage(parts : [ParfaitPart])->UIView{
+    func createPickerPage(parts : [ParfaitPart])->UIView{
         let pageView = UIView()
         
         let stackV:UIStackView = UIStackView()
@@ -102,25 +90,63 @@ class ViewController: UIViewController{
         setupStackH(stackH1)
         setupStackH(stackH2)
         
-        func createPartsImageView(_ image: UIImage) -> UIImageView {
-            let img = UIImageView(image: image)
-            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped(_:)))
+        func createPartsImageView(_ part: ParfaitPart) -> UIImageView {
+            let img = UIImageView(image: part.image)
+            img.isOpaque = false
+            img.backgroundColor = .clear
             img.contentMode = .scaleAspectFit
+            img.tag = part.id
+            
+            let interaction = UIDragInteraction(delegate: self)
+            interaction.isEnabled = true
+            img.addInteraction(interaction)
             img.isUserInteractionEnabled = true
-            img.addGestureRecognizer(tapGesture)
             return img
         }
         
         let firstRowCount = parts.count / 2 + parts.count % 2
         for i in 0..<firstRowCount {
-            stackH1.addArrangedSubview(createPartsImageView(parts[i].partImage))
+            stackH1.addArrangedSubview(createPartsImageView(parts[i]))
         }
         for i in firstRowCount..<parts.count {
-            stackH2.addArrangedSubview(createPartsImageView(parts[i].partImage))
+            stackH2.addArrangedSubview(createPartsImageView(parts[i]))
         }
         
         return pageView
+    }
+    
+    func refreshGlassContents() {
+        print("New parts set")
+    }
+    
+    func drawGlassContents() -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(self.glass.frame.size, false, 0)
+        UIGraphicsEndImageContext()
         
+        return UIImage()
     }
 }
 
+extension ViewController : UIDragInteractionDelegate {
+    func dragInteraction(_ interaction: UIDragInteraction, itemsForBeginning session: UIDragSession) -> [UIDragItem] {
+        let part = ParfaitPart.getPartByID(interaction.view!.tag)
+        self.partsBeingDragged = part
+        return [UIDragItem(itemProvider: NSItemProvider(object: part.image))]
+    }
+}
+
+extension ViewController : UIDropInteractionDelegate {
+    func dropInteraction(_ interaction: UIDropInteraction, canHandle session: UIDropSession) -> Bool {
+        return true
+    }
+    
+    func dropInteraction(_ interaction: UIDropInteraction, sessionDidUpdate session: UIDropSession) -> UIDropProposal {
+        return UIDropProposal(operation: .copy)
+    }
+    
+    func dropInteraction(_ interaction: UIDropInteraction, performDrop session: UIDropSession) {
+        let part = self.partsBeingDragged!
+        self.currentParts[part.kind] = part
+        self.refreshGlassContents()
+    }
+}

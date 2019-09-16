@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="parfait_scroll" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feu-2t-D0a" userLabel="PartPickerScroll">
-                                <rect key="frame" x="0.0" y="20" width="375" height="194"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="214.66666666666666"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuF-2Y-31I" userLabel="PartPickerScrollContent">
-                                        <rect key="frame" x="0.0" y="0.0" width="1875" height="194"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="2070" height="214.66666666666666"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
@@ -37,39 +37,39 @@
                                 </constraints>
                             </scrollView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Glass.png" translatesAutoresizingMaskIntoConstraints="NO" id="8EP-XA-oE4" userLabel="Glass">
-                                <rect key="frame" x="46" y="214" width="283" height="453"/>
+                                <rect key="frame" x="50.333333333333343" y="234.66666666666666" width="313.33333333333326" height="501.33333333333337"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8EP-XA-oE4" secondAttribute="height" multiplier="351:561" id="NgY-3B-K6u"/>
                                 </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DUv-SS-mZ0" userLabel="GlassContents">
+                                <rect key="frame" x="50.333333333333343" y="234.66666666666669" width="313.33333333333326" height="501.33333333333337"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="feu-2t-D0a" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7lj-rj-yTQ"/>
+                            <constraint firstItem="DUv-SS-mZ0" firstAttribute="bottom" secondItem="8EP-XA-oE4" secondAttribute="bottom" id="BW7-wl-8mA"/>
                             <constraint firstItem="feu-2t-D0a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IVD-rZ-1RN"/>
+                            <constraint firstItem="DUv-SS-mZ0" firstAttribute="leading" secondItem="8EP-XA-oE4" secondAttribute="leading" id="Spk-w6-Lr3"/>
                             <constraint firstItem="8EP-XA-oE4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SsS-G9-MYW"/>
                             <constraint firstItem="feu-2t-D0a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aQD-wg-bUn"/>
                             <constraint firstItem="8EP-XA-oE4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dvU-6z-03L"/>
+                            <constraint firstItem="DUv-SS-mZ0" firstAttribute="height" secondItem="8EP-XA-oE4" secondAttribute="height" id="ozQ-eh-HAn"/>
                             <constraint firstItem="8EP-XA-oE4" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.7" id="uY0-z1-btV"/>
                             <constraint firstItem="feu-2t-D0a" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="wdG-Tc-cr9"/>
+                            <constraint firstItem="DUv-SS-mZ0" firstAttribute="width" secondItem="8EP-XA-oE4" secondAttribute="width" id="yDu-62-9la"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="oH7-2F-qgi" appends="YES" id="WTX-i2-jmN"/>
-                        </connections>
                     </view>
                     <connections>
-                        <outlet property="scroll" destination="feu-2t-D0a" id="6KY-ap-E8K"/>
-                        <outlet property="scrollContentView" destination="nuF-2Y-31I" id="ijV-Qe-Csx"/>
+                        <outlet property="Glass" destination="8EP-XA-oE4" id="ak8-G7-TH2"/>
+                        <outlet property="pickerScroll" destination="feu-2t-D0a" id="6KY-ap-E8K"/>
+                        <outlet property="pickerScrollContentView" destination="nuF-2Y-31I" id="ijV-Qe-Csx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="oH7-2F-qgi">
-                    <connections>
-                        <action selector="dragging:" destination="BYZ-38-t0r" id="so5-4Q-nhE"/>
-                    </connections>
-                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="354.39999999999998" y="96.7016491754123"/>
         </scene>
