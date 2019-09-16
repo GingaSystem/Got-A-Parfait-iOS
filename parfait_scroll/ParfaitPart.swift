@@ -19,9 +19,18 @@ class ParfaitPart{
         case Syrup
     }
     
+    // 各パーツが中央に対してX軸方向に何pxの位置に描画されるべきかを調整する
+    let offsetX : Dictionary<Kind, CGFloat> = [
+        .Topping : 30,
+        .TopIce : 0,
+        .Fruit : 0,
+        .BottomIce : 0,
+        .Syrup : 0,
+        ]
+    
     // 各パーツがグラスに対して上から何pxの位置に描画されるべきかを調整する
-    let offset : Dictionary<Kind, CGFloat> = [
-        .Topping : 5,
+    let offsetY : Dictionary<Kind, CGFloat> = [
+        .Topping : 0,
         .TopIce : 40,
         .Fruit : 180,
         .BottomIce : 280,
@@ -125,8 +134,8 @@ class ParfaitPart{
         let ratio = glassSize.height / ParfaitPart.glass.size.height
         let h = self.image.size.height * ratio
         let w = self.image.size.width * ratio
-        let x = ((glassSize.width - w) / 2.0)
-        let y = offset[self.kind]! * ratio
+        let x = ((glassSize.width - w + offsetX[self.kind]!) / 2.0)
+        let y = offsetY[self.kind]! * ratio
         return CGRect(x: x, y: y, width: w, height: h)
     }
 }
