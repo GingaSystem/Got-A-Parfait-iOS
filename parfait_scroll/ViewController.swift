@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -20,8 +21,11 @@ class ViewController: UIViewController {
     // 現在選択されているパーツ
     var currentParts: Dictionary<ParfaitPart.Kind, ParfaitPart> = [:]
     
+    var player:AVAudioPlayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         // パーツ選択スクロールのセットアップ
         setupPickerScrollContentView()
