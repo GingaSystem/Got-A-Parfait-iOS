@@ -34,6 +34,8 @@
 		A505FCE6232E3790002B956C /* BottomIce2.png in Resources */ = {isa = PBXBuildFile; fileRef = A505FCCC232E3790002B956C /* BottomIce2.png */; };
 		A505FCE7232E3790002B956C /* Topping3.png in Resources */ = {isa = PBXBuildFile; fileRef = A505FCCD232E3790002B956C /* Topping3.png */; };
 		A505FCE8232E3790002B956C /* TopIce5.png in Resources */ = {isa = PBXBuildFile; fileRef = A505FCCE232E3790002B956C /* TopIce5.png */; };
+		A53BC234232F690B0026C857 /* parfaitMusicSample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A53BC233232F690B0026C857 /* parfaitMusicSample.mp3 */; };
+		A53BC236232F6A790026C857 /* roma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A53BC235232F6A780026C857 /* roma.mp3 */; };
 		A56893D922FF0702009B5640 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56893D822FF0702009B5640 /* AppDelegate.swift */; };
 		A56893DB22FF0702009B5640 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56893DA22FF0702009B5640 /* ViewController.swift */; };
 		A56893DE22FF0702009B5640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56893DC22FF0702009B5640 /* Main.storyboard */; };
@@ -69,6 +71,8 @@
 		A505FCCC232E3790002B956C /* BottomIce2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BottomIce2.png; sourceTree = "<group>"; };
 		A505FCCD232E3790002B956C /* Topping3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Topping3.png; sourceTree = "<group>"; };
 		A505FCCE232E3790002B956C /* TopIce5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopIce5.png; sourceTree = "<group>"; };
+		A53BC233232F690B0026C857 /* parfaitMusicSample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = parfaitMusicSample.mp3; sourceTree = "<group>"; };
+		A53BC235232F6A780026C857 /* roma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = roma.mp3; sourceTree = "<group>"; };
 		A56893D522FF0702009B5640 /* parfait_scroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parfait_scroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56893D822FF0702009B5640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A56893DA22FF0702009B5640 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 		A56893D722FF0702009B5640 /* parfait_scroll */ = {
 			isa = PBXGroup;
 			children = (
+				A53BC233232F690B0026C857 /* parfaitMusicSample.mp3 */,
+				A53BC235232F6A780026C857 /* roma.mp3 */,
 				9645F229232F46B4009009DD /* Images */,
 				A56893D822FF0702009B5640 /* AppDelegate.swift */,
 				A56893DA22FF0702009B5640 /* ViewController.swift */,
@@ -224,7 +230,9 @@
 				A505FCE5232E3790002B956C /* Fruits5.png in Resources */,
 				A505FCD6232E3790002B956C /* TopIce4.png in Resources */,
 				A505FCD3232E3790002B956C /* Topping4.png in Resources */,
+				A53BC236232F6A790026C857 /* roma.mp3 in Resources */,
 				A505FCDD232E3790002B956C /* Syrup2.png in Resources */,
+				A53BC234232F690B0026C857 /* parfaitMusicSample.mp3 in Resources */,
 				A505FCD4232E3790002B956C /* Syrup1.png in Resources */,
 				A56893E322FF0704009B5640 /* LaunchScreen.storyboard in Resources */,
 				A505FCD9232E3790002B956C /* TopIce2.png in Resources */,

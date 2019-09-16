@@ -7,19 +7,51 @@
 //
 
 import UIKit
+import AVFoundation
 class ViewController: UIViewController{
     
     @IBOutlet weak var scroll: UIScrollView!
     @IBOutlet weak var scrollContentView: UIView!
+    var player:AVAudioPlayer!
+    var player2:AVAudioPlayer!
+    let url = Bundle.main.bundleURL.appendingPathComponent("parfaitMusicSample.mp3")
+     let url2 = Bundle.main.bundleURL.appendingPathComponent("roma.mp3")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //音楽パート
+        do {
+            try player = AVAudioPlayer(contentsOf:url)
+            try player2 = AVAudioPlayer(contentsOf:url2)
+            
+            
+            //音楽をバッファに読み込んでおく
+            player.prepareToPlay()
+            player2.prepareToPlay()
+            
+        } catch {
+            print(error)
+        }
+    
         // パーツ選択スクロールのセットアップ
         setupScrollContentView()
         scroll.isPagingEnabled = true
     }
+
     
+    @IBAction func playMusic(_ sender: UIButton) {
+        
+         player.play()
+    }
+    @IBAction func playMusic2(_ sender: UIButton) {
+        
+        player2.play()
+    }
+    
+    @IBAction func stopMusic(_ sender: UIButton) {
+        player.stop()
+        player2.stop()
+    }
     @objc func imageTapped(_ sender: UITapGestureRecognizer){
         
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(self.imageDrag(_:)))
