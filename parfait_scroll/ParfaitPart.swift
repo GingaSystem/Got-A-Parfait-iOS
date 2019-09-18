@@ -41,43 +41,43 @@ class ParfaitPart{
     static private let glass = UIImage(named: "Glass")!
     
     static private let toppings = [
-        ParfaitPart(.Topping, "Topping1","se_maoudamashii_effect01.mp3"),
-        ParfaitPart(.Topping, "Topping2","se_maoudamashii_effect02.mp3"),
-        ParfaitPart(.Topping, "Topping3","se_maoudamashii_effect03.mp3"),
-        ParfaitPart(.Topping, "Topping4","se_maoudamashii_effect04.mp3"),
-        ParfaitPart(.Topping, "Topping5","se_maoudamashii_effect05.mp3"),
+        ParfaitPart(.Topping, "Topping1","awa.wav"),
+        ParfaitPart(.Topping, "Topping2","hail.wav"),
+        ParfaitPart(.Topping, "Topping3","kaze.wav"),
+        ParfaitPart(.Topping, "Topping4","kirakira"),
+        ParfaitPart(.Topping, "Topping5","mizu.wav"),
         ]
     
     static private let topIces = [
-        ParfaitPart(.TopIce, "TopIce1","se_maoudamashii_effect10.mp3"),
-        ParfaitPart(.TopIce, "TopIce2","se_maoudamashii_effect06.mp3"),
-        ParfaitPart(.TopIce, "TopIce3","se_maoudamashii_effect07.mp3"),
-        ParfaitPart(.TopIce, "TopIce4","se_maoudamashii_effect08.mp3"),
-        ParfaitPart(.TopIce, "TopIce5","se_maoudamashii_effect09.mp3"),
+        ParfaitPart(.TopIce, "TopIce1","counter1.wav"),
+        ParfaitPart(.TopIce, "TopIce2","counter2.wav"),
+        ParfaitPart(.TopIce, "TopIce3","counter3.wav"),
+        ParfaitPart(.TopIce, "TopIce4","counter4.wav"),
+        ParfaitPart(.TopIce, "TopIce5","counter5.wav"),
         ]
     
     static private let fruits =  [
-        ParfaitPart(.Fruit, "Fruits1","se_maoudamashii_effect12.mp3"),
-        ParfaitPart(.Fruit, "Fruits2","se_maoudamashii_effect11.mp3"),
-        ParfaitPart(.Fruit, "Fruits3","se_maoudamashii_effect13.mp3"),
-        ParfaitPart(.Fruit, "Fruits4","se_maoudamashii_effect14.mp3"),
-        ParfaitPart(.Fruit, "Fruits5","se_maoudamashii_effect15.mp3"),
+        ParfaitPart(.Fruit, "Fruits1","backing2.wav"),
+        ParfaitPart(.Fruit, "Fruits2","backing2.wav"),
+        ParfaitPart(.Fruit, "Fruits3","backing3.wav"),
+        ParfaitPart(.Fruit, "Fruits4","backing4.wav"),
+        ParfaitPart(.Fruit, "Fruits5","backing5.wav"),
         ]
     
     static private let bottomIces = [
-        ParfaitPart(.BottomIce, "BottomIce1","se_maoudamashii_effect05.mp3"),
-        ParfaitPart(.BottomIce, "BottomIce2","se_maoudamashii_effect04.mp3"),
-        ParfaitPart(.BottomIce, "BottomIce3","se_maoudamashii_effect03.mp3"),
-        ParfaitPart(.BottomIce, "BottomIce4","se_maoudamashii_effect02.mp3"),
-        ParfaitPart(.BottomIce, "BottomIce5","se_maoudamashii_effect01.mp3"),
+        ParfaitPart(.BottomIce, "BottomIce1","backing2.wav"),
+        ParfaitPart(.BottomIce, "BottomIce2","backing2.wav"),
+        ParfaitPart(.BottomIce, "BottomIce3","backing3.wav"),
+        ParfaitPart(.BottomIce, "BottomIce4","backing4.wav"),
+        ParfaitPart(.BottomIce, "BottomIce5","baking5.wav"),
         ]
     
     static private let syrups = [
-        ParfaitPart(.Syrup, "Syrup1","se_maoudamashii_effect06.mp3"),
-        ParfaitPart(.Syrup, "Syrup2","se_maoudamashii_effect07.mp3"),
-        ParfaitPart(.Syrup, "Syrup3","se_maoudamashii_effect08.mp3"),
-        ParfaitPart(.Syrup, "Syrup4","se_maoudamashii_effect09.mp3"),
-        ParfaitPart(.Syrup, "Syrup5","se_maoudamashii_effect10.mp3"),
+        ParfaitPart(.Syrup, "Syrup1","bass1.wav"),
+        ParfaitPart(.Syrup, "Syrup2","bass2.wav"),
+        ParfaitPart(.Syrup, "Syrup3","bass3.wav"),
+        ParfaitPart(.Syrup, "Syrup4","bass4.wav"),
+        ParfaitPart(.Syrup, "Syrup5","bass5.wav"),
         ]
     
     static private var nextId: Int = 0
