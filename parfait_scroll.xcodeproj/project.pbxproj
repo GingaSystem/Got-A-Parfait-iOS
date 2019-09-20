@@ -50,6 +50,15 @@
 		A505FCE6232E3790002B956C /* BottomIce2.png in Resources */ = {isa = PBXBuildFile; fileRef = A505FCCC232E3790002B956C /* BottomIce2.png */; };
 		A505FCE7232E3790002B956C /* Topping3.png in Resources */ = {isa = PBXBuildFile; fileRef = A505FCCD232E3790002B956C /* Topping3.png */; };
 		A505FCE8232E3790002B956C /* TopIce5.png in Resources */ = {isa = PBXBuildFile; fileRef = A505FCCE232E3790002B956C /* TopIce5.png */; };
+		A52D0BD72335252E00739EA4 /* drum3_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A52D0BD22335252D00739EA4 /* drum3_1.wav */; };
+		A52D0BD82335252E00739EA4 /* drum4_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A52D0BD32335252D00739EA4 /* drum4_1.wav */; };
+		A52D0BD92335252E00739EA4 /* drum1_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A52D0BD42335252E00739EA4 /* drum1_1.wav */; };
+		A52D0BDA2335252E00739EA4 /* drum5_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A52D0BD52335252E00739EA4 /* drum5_1.wav */; };
+		A52D0BDB2335252E00739EA4 /* drum2_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A52D0BD62335252E00739EA4 /* drum2_1.wav */; };
+		A52D0BE02335254700739EA4 /* bass4_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A52D0BDC2335254700739EA4 /* bass4_1.wav */; };
+		A52D0BE12335254700739EA4 /* bass1_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A52D0BDD2335254700739EA4 /* bass1_1.wav */; };
+		A52D0BE22335254700739EA4 /* bass3_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A52D0BDE2335254700739EA4 /* bass3_1.wav */; };
+		A52D0BE32335254700739EA4 /* bass2_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A52D0BDF2335254700739EA4 /* bass2_1.wav */; };
 		A56893D922FF0702009B5640 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56893D822FF0702009B5640 /* AppDelegate.swift */; };
 		A56893DB22FF0702009B5640 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56893DA22FF0702009B5640 /* ViewController.swift */; };
 		A56893DE22FF0702009B5640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56893DC22FF0702009B5640 /* Main.storyboard */; };
@@ -121,6 +130,15 @@
 		A505FCCC232E3790002B956C /* BottomIce2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BottomIce2.png; sourceTree = "<group>"; };
 		A505FCCD232E3790002B956C /* Topping3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Topping3.png; sourceTree = "<group>"; };
 		A505FCCE232E3790002B956C /* TopIce5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopIce5.png; sourceTree = "<group>"; };
+		A52D0BD22335252D00739EA4 /* drum3_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum3_1.wav; sourceTree = "<group>"; };
+		A52D0BD32335252D00739EA4 /* drum4_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum4_1.wav; sourceTree = "<group>"; };
+		A52D0BD42335252E00739EA4 /* drum1_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum1_1.wav; sourceTree = "<group>"; };
+		A52D0BD52335252E00739EA4 /* drum5_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum5_1.wav; sourceTree = "<group>"; };
+		A52D0BD62335252E00739EA4 /* drum2_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum2_1.wav; sourceTree = "<group>"; };
+		A52D0BDC2335254700739EA4 /* bass4_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass4_1.wav; sourceTree = "<group>"; };
+		A52D0BDD2335254700739EA4 /* bass1_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass1_1.wav; sourceTree = "<group>"; };
+		A52D0BDE2335254700739EA4 /* bass3_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass3_1.wav; sourceTree = "<group>"; };
+		A52D0BDF2335254700739EA4 /* bass2_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass2_1.wav; sourceTree = "<group>"; };
 		A56893D522FF0702009B5640 /* parfait_scroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parfait_scroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56893D822FF0702009B5640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A56893DA22FF0702009B5640 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +226,10 @@
 				A5FDA2B223322A79008ED449 /* bass3.wav */,
 				A5FDA2B023322A79008ED449 /* bass4.wav */,
 				A5FDA2B123322A79008ED449 /* bass5.wav */,
+				A52D0BDD2335254700739EA4 /* bass1_1.wav */,
+				A52D0BDF2335254700739EA4 /* bass2_1.wav */,
+				A52D0BDE2335254700739EA4 /* bass3_1.wav */,
+				A52D0BDC2335254700739EA4 /* bass4_1.wav */,
 				A5FDA2A723322A62008ED449 /* counter1.wav */,
 				A5FDA2A623322A62008ED449 /* counter2.wav */,
 				A5FDA2A923322A62008ED449 /* counter3.wav */,
@@ -217,6 +239,11 @@
 				A5FDA29E23322A47008ED449 /* backing3.wav */,
 				A5FDA2A123322A48008ED449 /* backing4.wav */,
 				A5FDA29F23322A47008ED449 /* backing5.wav */,
+				A52D0BD42335252E00739EA4 /* drum1_1.wav */,
+				A52D0BD62335252E00739EA4 /* drum2_1.wav */,
+				A52D0BD22335252D00739EA4 /* drum3_1.wav */,
+				A52D0BD32335252D00739EA4 /* drum4_1.wav */,
+				A52D0BD52335252E00739EA4 /* drum5_1.wav */,
 				96FA27F5232F899B00E8181D /* se_maoudamashii_effect01.mp3 */,
 				96FA27FA232F899B00E8181D /* se_maoudamashii_effect02.mp3 */,
 				96FA27F6232F899B00E8181D /* se_maoudamashii_effect03.mp3 */,
@@ -327,8 +354,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52D0BD72335252E00739EA4 /* drum3_1.wav in Resources */,
 				A505FCDC232E3790002B956C /* Syrup4.png in Resources */,
 				96FA2808232F899B00E8181D /* se_maoudamashii_effect14.mp3 in Resources */,
+				A52D0BE22335254700739EA4 /* bass3_1.wav in Resources */,
 				A505FCE0232E3790002B956C /* Topping1.png in Resources */,
 				A505FCD5232E3790002B956C /* Syrup5.png in Resources */,
 				A505FCD8232E3790002B956C /* Topping2.png in Resources */,
@@ -355,6 +384,7 @@
 				A505FCD4232E3790002B956C /* Syrup1.png in Resources */,
 				96FA2806232F899B00E8181D /* se_maoudamashii_effect13.mp3 in Resources */,
 				A56893E322FF0704009B5640 /* LaunchScreen.storyboard in Resources */,
+				A52D0BD92335252E00739EA4 /* drum1_1.wav in Resources */,
 				A5FDA2AD23322A63008ED449 /* counter4.wav in Resources */,
 				A5FDA2B723322A7A008ED449 /* bass3.wav in Resources */,
 				96FA280B232F899B00E8181D /* se_maoudamashii_effect08.mp3 in Resources */,
@@ -375,17 +405,23 @@
 				A5FDA2C123322A87008ED449 /* rain.wav in Resources */,
 				A5FDA2C423322A87008ED449 /* kaze.wav in Resources */,
 				A505FCDA232E3790002B956C /* BottomIce3.png in Resources */,
+				A52D0BE02335254700739EA4 /* bass4_1.wav in Resources */,
 				A505FCD1232E3790002B956C /* Syrup3.png in Resources */,
 				96FA2800232F899B00E8181D /* se_maoudamashii_effect15.mp3 in Resources */,
+				A52D0BDA2335252E00739EA4 /* drum5_1.wav in Resources */,
 				A5FDA2B923322A7A008ED449 /* bass1.wav in Resources */,
 				A5FDA2C323322A87008ED449 /* mizu.wav in Resources */,
 				A505FCDB232E3790002B956C /* Fruits1.png in Resources */,
+				A52D0BE32335254700739EA4 /* bass2_1.wav in Resources */,
 				A5FDA2C023322A87008ED449 /* kirakira.wav in Resources */,
+				A52D0BD82335252E00739EA4 /* drum4_1.wav in Resources */,
+				A52D0BDB2335252E00739EA4 /* drum2_1.wav in Resources */,
 				A5FDA2AE23322A63008ED449 /* counter3.wav in Resources */,
 				A505FCCF232E3790002B956C /* BottomIce5.png in Resources */,
 				A5FDA2AB23322A63008ED449 /* counter2.wav in Resources */,
 				A5FDA2B823322A7A008ED449 /* bass2.wav in Resources */,
 				96FA27FE232F899B00E8181D /* se_maoudamashii_effect05.mp3 in Resources */,
+				A52D0BE12335254700739EA4 /* bass1_1.wav in Resources */,
 				A5FDA2C523322A87008ED449 /* hail.wav in Resources */,
 				A505FCE7232E3790002B956C /* Topping3.png in Resources */,
 				A56893DE22FF0702009B5640 /* Main.storyboard in Resources */,
@@ -560,7 +596,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.minteea.parfait-scroll";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -578,7 +614,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.minteea.parfait-scroll";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

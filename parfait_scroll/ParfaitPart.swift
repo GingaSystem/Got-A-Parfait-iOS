@@ -65,19 +65,19 @@ class ParfaitPart{
         ]
     
     static private let bottomIces = [
-        ParfaitPart(.BottomIce, "BottomIce1","backing2.wav"),
-        ParfaitPart(.BottomIce, "BottomIce2","backing2.wav"),
-        ParfaitPart(.BottomIce, "BottomIce3","backing3.wav"),
-        ParfaitPart(.BottomIce, "BottomIce4","backing4.wav"),
-        ParfaitPart(.BottomIce, "BottomIce5","baking5.wav"),
+        ParfaitPart(.BottomIce, "BottomIce1","bass1_1.wav"),
+        ParfaitPart(.BottomIce, "BottomIce2","bass2_1.wav"),
+        ParfaitPart(.BottomIce, "BottomIce3","bass3_1.wav"),
+        ParfaitPart(.BottomIce, "BottomIce4","bass4_1.wav"),
+        ParfaitPart(.BottomIce, "BottomIce5","bass5.wav"),
         ]
     
     static private let syrups = [
-        ParfaitPart(.Syrup, "Syrup1","bass1.wav"),
-        ParfaitPart(.Syrup, "Syrup2","bass2.wav"),
-        ParfaitPart(.Syrup, "Syrup3","bass3.wav"),
-        ParfaitPart(.Syrup, "Syrup4","bass4.wav"),
-        ParfaitPart(.Syrup, "Syrup5","bass5.wav"),
+        ParfaitPart(.Syrup, "Syrup1","drum1_1.wav"),
+        ParfaitPart(.Syrup, "Syrup2","drum2_1.wav"),
+        ParfaitPart(.Syrup, "Syrup3","drum3_1.wav"),
+        ParfaitPart(.Syrup, "Syrup4","drum4_1.wav"),
+        ParfaitPart(.Syrup, "Syrup5","drum5_1.wav"),
         ]
     
     static private var nextId: Int = 0
