@@ -143,6 +143,7 @@
 		A52D0BDD2335254700739EA4 /* bass1_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass1_1.wav; sourceTree = "<group>"; };
 		A52D0BDE2335254700739EA4 /* bass3_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass3_1.wav; sourceTree = "<group>"; };
 		A52D0BDF2335254700739EA4 /* bass2_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass2_1.wav; sourceTree = "<group>"; };
+		A562F0C723375A8800519F5B /* kirakira2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = kirakira2.m4a; sourceTree = "<group>"; };
 		A56893D522FF0702009B5640 /* parfait_scroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parfait_scroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56893D822FF0702009B5640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A56893DA22FF0702009B5640 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +223,7 @@
 				A5FDA2BC23322A86008ED449 /* awa.wav */,
 				A5FDA2BF23322A87008ED449 /* hail.wav */,
 				A5FDA2BE23322A87008ED449 /* kaze.wav */,
+				A562F0C723375A8800519F5B /* kirakira2.m4a */,
 				A5FDA2BA23322A86008ED449 /* kirakira.wav */,
 				A5FDA2BD23322A87008ED449 /* mizu.wav */,
 				A5FDA2BB23322A86008ED449 /* rain.wav */,

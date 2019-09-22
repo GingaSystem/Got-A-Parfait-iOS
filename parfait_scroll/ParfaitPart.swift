@@ -42,16 +42,16 @@ class ParfaitPart{
     
     static private let toppings = [
         ParfaitPart(.Topping, "Topping1","awa.wav"),
-        ParfaitPart(.Topping, "Topping2","hail.wav"),
+        ParfaitPart(.Topping, "Topping2","kirakira2.m4a"),
         ParfaitPart(.Topping, "Topping3","kaze.wav"),
-        ParfaitPart(.Topping, "Topping4","kirakira"),
+        ParfaitPart(.Topping, "Topping4","hail.wav"),
         ParfaitPart(.Topping, "Topping5","mizu.wav"),
         ]
     
     static private let topIces = [
-        ParfaitPart(.TopIce, "TopIce1","counter1.wav"),
+        ParfaitPart(.TopIce, "TopIce1","counter3.wav"),
         ParfaitPart(.TopIce, "TopIce2","counter2.wav"),
-        ParfaitPart(.TopIce, "TopIce3","counter3.wav"),
+        ParfaitPart(.TopIce, "TopIce3","counter1.wav"),
         ParfaitPart(.TopIce, "TopIce4","counter4.wav"),
         ParfaitPart(.TopIce, "TopIce5","counter5.wav"),
         ]
@@ -65,11 +65,11 @@ class ParfaitPart{
         ]
     
     static private let bottomIces = [
-        ParfaitPart(.BottomIce, "BottomIce1","bass1_1.wav"),
-        ParfaitPart(.BottomIce, "BottomIce2","bass2_1.wav"),
+        ParfaitPart(.BottomIce, "BottomIce1","bass1.wav"),
+        ParfaitPart(.BottomIce, "BottomIce2","bass3.wav"),
         ParfaitPart(.BottomIce, "BottomIce3","bass3_1.wav"),
         ParfaitPart(.BottomIce, "BottomIce4","bass4_1.wav"),
-        ParfaitPart(.BottomIce, "BottomIce5","bass5.wav"),
+        ParfaitPart(.BottomIce, "BottomIce5","bass2.wav"),
         ]
     
     static private let syrups = [
