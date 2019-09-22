@@ -171,6 +171,7 @@ class ViewController: UIViewController {
                         
                         DispatchQueue.main.async {
                             let activityVC = UIActivityViewController(activityItems: [getMixedVideoURL()], applicationActivities: nil)
+                            activityVC.popoverPresentationController!.sourceView = self.glass
                             self.present(activityVC, animated: true, completion: nil)
                         }
                     }
