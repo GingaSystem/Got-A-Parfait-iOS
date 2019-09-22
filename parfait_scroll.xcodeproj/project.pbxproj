@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9609002D233762B800B74FDF /* Spoon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9609002C233762B800B74FDF /* Spoon.png */; };
 		96930DCE2336262A0063110F /* ParfaitVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96930DCD2336262A0063110F /* ParfaitVideo.swift */; };
 		96930DD0233697750063110F /* ParfaitMix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96930DCF233697750063110F /* ParfaitMix.swift */; };
 		96FA27FD232F899B00E8181D /* se_maoudamashii_effect10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27EE232F899B00E8181D /* se_maoudamashii_effect10.mp3 */; };
@@ -89,6 +90,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9609002C233762B800B74FDF /* Spoon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spoon.png; sourceTree = "<group>"; };
 		96930DCD2336262A0063110F /* ParfaitVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParfaitVideo.swift; sourceTree = "<group>"; };
 		96930DCF233697750063110F /* ParfaitMix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParfaitMix.swift; sourceTree = "<group>"; };
 		96FA27EE232F899B00E8181D /* se_maoudamashii_effect10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect10.mp3; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 		9645F229232F46B4009009DD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9609002C233762B800B74FDF /* Spoon.png */,
 				A505FCC4232E378F002B956C /* BottomIce1.png */,
 				A505FCCC232E3790002B956C /* BottomIce2.png */,
 				A505FCC0232E378F002B956C /* BottomIce3.png */,
@@ -371,6 +374,7 @@
 				A505FCD8232E3790002B956C /* Topping2.png in Resources */,
 				A505FCDE232E3790002B956C /* BottomIce1.png in Resources */,
 				A5FDA2AC23322A63008ED449 /* counter1.wav in Resources */,
+				9609002D233762B800B74FDF /* Spoon.png in Resources */,
 				96FA2801232F899B00E8181D /* se_maoudamashii_effect04.mp3 in Resources */,
 				A505FCD7232E3790002B956C /* TopIce3.png in Resources */,
 				A5FDA2A423322A48008ED449 /* backing2.wav in Resources */,

@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Accounts
 
 class ViewController: UIViewController {
     
@@ -15,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var pickerScrollContentView: UIView!
     @IBOutlet weak var glass: UIImageView!
     @IBOutlet weak var glassContents: UIImageView!
+    @IBOutlet weak var spoon: UIImageView!
     
     // ドラッグされているパーツ
     var partsBeingDragged: ParfaitPart!
@@ -33,6 +35,10 @@ class ViewController: UIViewController {
         let interaction = UIDropInteraction(delegate: self)
         glassContents.addInteraction(interaction)
         glassContents.isUserInteractionEnabled = true
+        
+        // 共有ボタン
+        spoon.isUserInteractionEnabled = true
+        spoon.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.spoonTapped(_:))))
         
         // 初期状態の設定
         currentParts[.Syrup] = ParfaitPart.getSyrups()[0]
@@ -126,14 +132,17 @@ class ViewController: UIViewController {
         return pageView
     }
     
+    @objc func spoonTapped(_ sender: UITapGestureRecognizer) {
+        print("spoon tapped")
+        shareParfait()
+    }
+    
     func refreshGlassContents() {
         let img = drawGlassContents()
         glassContents.image = img
         previewTrack(parts: currentParts)
-        
-        shareParfait()
     }
-    
+
     func shareParfait() {
         // パフェを共有する
         
@@ -159,6 +168,11 @@ class ViewController: UIViewController {
                     } else if assetExport.status == AVAssetExportSession.Status.completed {
                         // 成功した場合
                         print("mix completed")
+                        
+                        DispatchQueue.main.async {
+                            let activityVC = UIActivityViewController(activityItems: [getMixedVideoURL()], applicationActivities: nil)
+                            self.present(activityVC, animated: true, completion: nil)
+                        }
                     }
                 })
             })
