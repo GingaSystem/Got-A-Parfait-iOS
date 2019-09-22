@@ -94,13 +94,13 @@ class ParfaitPart{
     let image : UIImage
     
     // パーツに対応するトラックの名前
-    let trackName : String
+    let trackURL : URL
     
-    private init(_ kind: Kind, _ imageName : String, _ trackName: String){
+    private init(_ kind: Kind, _ imageName : String, _ trackPath: String){
         self.id = ParfaitPart.nextId
         self.kind = kind
         self.image = UIImage(named: imageName)!
-        self.trackName = trackName
+        self.trackURL = Bundle.main.bundleURL.appendingPathComponent(trackPath)
         
         ParfaitPart.nextId += 1
         ParfaitPart.mapping[self.id] = self

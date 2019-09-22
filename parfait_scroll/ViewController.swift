@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -129,14 +130,63 @@ class ViewController: UIViewController {
         let img = drawGlassContents()
         glassContents.image = img
         previewTrack(parts: currentParts)
+        
+        shareParfait()
     }
     
-    func drawGlassContents() -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(self.glassContents.frame.size, false, 0)
-        UIGraphicsGetCurrentContext()
+    func shareParfait() {
+        // パフェを共有する
+        
+        // オーディオトラック作成
+        let (audioURL, trackLength) = renderTrack(parts: currentParts)
+        
+        // ビデオトラック作成
+        renderVideo(
+            image: drawGlassAndContents(
+                contentSize: CGSize(width: 952, height: 1600),
+                glassSize: CGSize(width: 952, height: 1230)),
+            length: trackLength,
+            cb: {
+                (videoURL: URL) -> Void in
+                print("movie located at", videoURL)
+                
+                // 共有用のミックス動画の作成
+                renderMixed(audioURL, videoURL, {
+                    (assetExport) -> Void in
+                    if assetExport.status == AVAssetExportSession.Status.failed {
+                        // 失敗した場合
+                        print("mix failed:", assetExport.error!)
+                    } else if assetExport.status == AVAssetExportSession.Status.completed {
+                        // 成功した場合
+                        print("mix completed")
+                    }
+                })
+            })
+    }
+    
+    func drawGlassAndContents(contentSize: CGSize, glassSize: CGSize) -> UIImage {
+        let entireRegionRect = CGRect(x: 0, y: 0, width: contentSize.width, height: contentSize.height)
+        let glassRegionRect = CGRect(x: 0, y: contentSize.height - glassSize.height, width: glassSize.width, height: glassSize.height)
+        
+        UIGraphicsBeginImageContextWithOptions(contentSize, false, 0)
+        let ctx = UIGraphicsGetCurrentContext()!
+        ctx.setFillColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)
+        UIRectFill(entireRegionRect)
+        self.glass.image!.draw(in: glassRegionRect)
+        drawGlassContents(contentSize: contentSize, glassSize: glassSize).draw(in: CGRect(x: 0, y: 0, width: contentSize.width, height: contentSize.height))
+         let img = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return img
+    }
+    
+    func drawGlassContents(contentSize: CGSize? = nil, glassSize: CGSize? = nil) -> UIImage {
+        let targetContentSize = contentSize == nil ? self.glassContents.frame.size : contentSize
+        let targetGlassSize = glassSize == nil ? self.glass.frame.size : glassSize
+
+        UIGraphicsBeginImageContextWithOptions(targetContentSize!, false, 0)
         for kind: ParfaitPart.Kind in [.Syrup, .BottomIce, .Fruit, .TopIce, .Topping] {
             guard let part = currentParts[kind] else { continue }
-            let rect = part.getRectRelativeToGlass(glassSize: glass.frame.size)
+            let rect = part.getRectRelativeToGlass(glassSize: targetGlassSize!)
             part.image.draw(in: rect)
         }
         let img = UIGraphicsGetImageFromCurrentImageContext()!
