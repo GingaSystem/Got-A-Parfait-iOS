@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     var partsBeingDragged: ParfaitPart!
     
     // 現在選択されているパーツ
-    var currentParts: Dictionary<ParfaitPart.Kind, ParfaitPart> = [:]    
+    var currentParts: Dictionary<ParfaitPart.Kind, ParfaitPart> = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
                         ParfaitPart.getFruits(),
                         ParfaitPart.getTopIces(),
                         ParfaitPart.getToppings(),
-                        ]
+        ]
         allParts.forEach {
             let pageView = createPickerPage(parts: $0)
             stack.addArrangedSubview(pageView)
