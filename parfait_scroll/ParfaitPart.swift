@@ -42,7 +42,7 @@ class ParfaitPart{
     
     static private let toppings = [
         ParfaitPart(.Topping, "Topping1","awa.wav"),
-        ParfaitPart(.Topping, "Topping2","kirakira2.m4a"),
+        ParfaitPart(.Topping, "Topping2","kirakira8.wav"),
         ParfaitPart(.Topping, "Topping3","kaze.wav"),
         ParfaitPart(.Topping, "Topping4","hail.wav"),
         ParfaitPart(.Topping, "Topping5","mizu.wav"),
