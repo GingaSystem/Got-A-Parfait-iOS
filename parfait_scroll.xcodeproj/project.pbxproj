@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9609002D233762B800B74FDF /* Spoon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9609002C233762B800B74FDF /* Spoon.png */; };
+		96930DCE2336262A0063110F /* ParfaitVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96930DCD2336262A0063110F /* ParfaitVideo.swift */; };
+		96930DD0233697750063110F /* ParfaitMix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96930DCF233697750063110F /* ParfaitMix.swift */; };
 		96FA27FD232F899B00E8181D /* se_maoudamashii_effect10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27EE232F899B00E8181D /* se_maoudamashii_effect10.mp3 */; };
 		96FA27FE232F899B00E8181D /* se_maoudamashii_effect05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27EF232F899B00E8181D /* se_maoudamashii_effect05.mp3 */; };
 		96FA27FF232F899B00E8181D /* se_maoudamashii_effect12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27F0232F899B00E8181D /* se_maoudamashii_effect12.mp3 */; };
@@ -93,6 +96,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9609002C233762B800B74FDF /* Spoon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spoon.png; sourceTree = "<group>"; };
+		96930DCD2336262A0063110F /* ParfaitVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParfaitVideo.swift; sourceTree = "<group>"; };
+		96930DCF233697750063110F /* ParfaitMix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParfaitMix.swift; sourceTree = "<group>"; };
 		96FA27EE232F899B00E8181D /* se_maoudamashii_effect10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect10.mp3; sourceTree = "<group>"; };
 		96FA27EF232F899B00E8181D /* se_maoudamashii_effect05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect05.mp3; sourceTree = "<group>"; };
 		96FA27F0232F899B00E8181D /* se_maoudamashii_effect12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect12.mp3; sourceTree = "<group>"; };
@@ -194,6 +200,7 @@
 		9645F229232F46B4009009DD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9609002C233762B800B74FDF /* Spoon.png */,
 				A505FCC4232E378F002B956C /* BottomIce1.png */,
 				A505FCCC232E3790002B956C /* BottomIce2.png */,
 				A505FCC0232E378F002B956C /* BottomIce3.png */,
@@ -306,6 +313,8 @@
 				A56893DA22FF0702009B5640 /* ViewController.swift */,
 				A505FCB3232E1676002B956C /* ParfaitPart.swift */,
 				96FA280E232FDECA00E8181D /* ParfaitAudio.swift */,
+				96930DCD2336262A0063110F /* ParfaitVideo.swift */,
+				96930DCF233697750063110F /* ParfaitMix.swift */,
 				A56893DC22FF0702009B5640 /* Main.storyboard */,
 				A56893DF22FF0704009B5640 /* Assets.xcassets */,
 				A56893E122FF0704009B5640 /* LaunchScreen.storyboard */,
@@ -381,6 +390,7 @@
 				A505FCD8232E3790002B956C /* Topping2.png in Resources */,
 				A505FCDE232E3790002B956C /* BottomIce1.png in Resources */,
 				A5FDA2AC23322A63008ED449 /* counter1.wav in Resources */,
+				9609002D233762B800B74FDF /* Spoon.png in Resources */,
 				96FA2801232F899B00E8181D /* se_maoudamashii_effect04.mp3 in Resources */,
 				A505FCD7232E3790002B956C /* TopIce3.png in Resources */,
 				A5FDA2A423322A48008ED449 /* backing2.wav in Resources */,
@@ -461,9 +471,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96930DD0233697750063110F /* ParfaitMix.swift in Sources */,
 				A56893DB22FF0702009B5640 /* ViewController.swift in Sources */,
 				A505FCB4232E1676002B956C /* ParfaitPart.swift in Sources */,
 				96FA280F232FDECB00E8181D /* ParfaitAudio.swift in Sources */,
+				96930DCE2336262A0063110F /* ParfaitVideo.swift in Sources */,
 				A56893D922FF0702009B5640 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
