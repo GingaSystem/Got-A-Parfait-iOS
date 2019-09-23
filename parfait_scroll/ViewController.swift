@@ -112,7 +112,7 @@ class ViewController: UIViewController {
         setupStackH(stackH1)
         setupStackH(stackH2)
         
-        func createPartsImageView(_ part: ParfaitPart) -> UIImageView {
+        func createPartsImageView(_ stack: UIStackView, _ part: ParfaitPart) {
             let img = UIImageView(image: part.image)
             img.isOpaque = false
             img.backgroundColor = .clear
@@ -123,15 +123,19 @@ class ViewController: UIViewController {
             interaction.isEnabled = true
             img.addInteraction(interaction)
             img.isUserInteractionEnabled = true
-            return img
+            
+            stack.addArrangedSubview(img)
+            NSLayoutConstraint.activate([
+                img.heightAnchor.constraint(equalTo: stack.heightAnchor, multiplier: 0.9),
+                ])
         }
         
         let firstRowCount = parts.count / 2 + parts.count % 2
         for i in 0..<firstRowCount {
-            stackH1.addArrangedSubview(createPartsImageView(parts[i]))
+            createPartsImageView(stackH1, parts[i])
         }
         for i in firstRowCount..<parts.count {
-            stackH2.addArrangedSubview(createPartsImageView(parts[i]))
+            createPartsImageView(stackH2, parts[i])
         }
         
         return pageView
