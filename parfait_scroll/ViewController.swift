@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var glass: UIImageView!
     @IBOutlet weak var glassContents: UIImageView!
     @IBOutlet weak var spoon: UIImageView!
+    @IBOutlet weak var makingParfaitView: UIVisualEffectView!
     
     // ドラッグされているパーツ
     var partsBeingDragged: ParfaitPart!
@@ -146,6 +147,9 @@ class ViewController: UIViewController {
     func shareParfait() {
         // パフェを共有する
         
+        // パフェ作成中の画面を表示する
+        makingParfaitView.isHidden = false
+        
         // オーディオトラック作成
         let (audioURL, trackLength) = renderTrack(parts: currentParts)
         
@@ -160,16 +164,23 @@ class ViewController: UIViewController {
                 print("movie located at", videoURL)
                 
                 // 共有用のミックス動画の作成
+                print("mixing...")
                 renderMixed(audioURL, videoURL, {
                     (assetExport) -> Void in
+
+                    // パフェ共有中の画面を非表示にする
+                    DispatchQueue.main.async {
+                        self.makingParfaitView.isHidden = true
+                    }
+
                     if assetExport.status == AVAssetExportSession.Status.failed {
                         // 失敗した場合
                         print("mix failed:", assetExport.error!)
                     } else if assetExport.status == AVAssetExportSession.Status.completed {
                         // 成功した場合
                         print("mix completed")
-                        
                         DispatchQueue.main.async {
+                            // 共有パネルを表示
                             let activityVC = UIActivityViewController(activityItems: [getMixedVideoURL()], applicationActivities: nil)
                             activityVC.popoverPresentationController!.sourceView = self.glass
                             self.present(activityVC, animated: true, completion: nil)
