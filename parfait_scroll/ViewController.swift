@@ -166,6 +166,10 @@ class ViewController: UIViewController {
     func shareParfait() {
         // パフェを共有する
         
+        if currentParts.count == 0 {
+            return
+        }
+        
         // パフェ作成中の画面を表示する
         makingParfaitView.isHidden = false
         

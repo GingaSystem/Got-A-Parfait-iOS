@@ -21,8 +21,11 @@ private let recorderDelegate = RecorderDelegate()
  */
 func previewTrack(parts: Dictionary<ParfaitPart.Kind, ParfaitPart>, loop: Bool = false) {
     stopPreview()
-    preparePreview(parts: parts, loop: loop)
-    _ = startPreview()
+    
+    if parts.count == 0 {
+        preparePreview(parts: parts, loop: loop)
+        _ = startPreview()
+    }
 }
 
 private func startPreview(delay: TimeInterval = 0.01) -> TimeInterval {
