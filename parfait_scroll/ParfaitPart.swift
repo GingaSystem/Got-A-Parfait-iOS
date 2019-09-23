@@ -30,10 +30,10 @@ class ParfaitPart{
     
     // 各パーツがグラスに対して下から何pxの位置に描画されるべきかを調整する
     private static let defaultOffsetY : Dictionary<Kind, CGFloat> = [
-        .Topping : 4460,
-        .TopIce : 3836,
-        .Fruit : 3020,
-        .BottomIce : 2940,
+        .Topping : 4500,
+        .TopIce : 4700,
+        .Fruit : 3750,
+        .BottomIce : 3340,
         .Syrup : 1650,
     ]
     
@@ -50,23 +50,23 @@ class ParfaitPart{
     ]
     
     static private let topIces = [
-        ParfaitPart(.TopIce, "バニラアイス１.png", 0.86, "counter5.wav"),
-        ParfaitPart(.TopIce, "レモンアイス１.png", 0.84, "counter4.wav"),
-        ParfaitPart(.TopIce, "チョコアイス１.png", 0.70, "counter1.wav", offsetY: -20),
-        ParfaitPart(.TopIce, "プリン１.png", 0.84, "counter3.wav", offsetY: -25),
-        ParfaitPart(.TopIce, "マカロン１.png", 0.88, "counter2.wav", offsetY: -30),
+        ParfaitPart(.TopIce, "バニラアイス１.png", 1.0, "counter5.wav"),
+        ParfaitPart(.TopIce, "レモンアイス１.png", 1.1, "counter4.wav"),
+        ParfaitPart(.TopIce, "チョコアイス１.png", 1.0, "counter1.wav", offsetY: -20),
+        ParfaitPart(.TopIce, "プリン１.png", 1.1, "counter3.wav", offsetY: -25),
+        ParfaitPart(.TopIce, "マカロン１.png", 1.1, "counter2.wav", offsetY: -30),
         // ParfaitPart(.TopIce, "ベリーアイス１.png", 0.84, "counter5.wav"),
     ]
     
     static private let fruits =  [
-        ParfaitPart(.Fruit, "レモン１.png", 0.80, "backing2.wav"),
+        ParfaitPart(.Fruit, "レモン１.png", 1.0, "backing2.wav"),
         ParfaitPart(.Fruit, "オレンジ１.png", 0.77, "backing5.wav"),
         ParfaitPart(.Fruit, "メロン１.png", 0.77, "backing2.wav"),
         ParfaitPart(.Fruit, "いちご１.png", 0.70, "backing3.wav"),
         ParfaitPart(.Fruit, "ぶどう１.png", 0.69, "backing4.wav"),
     ]
     
-    static private let bottomIceRatio: CGFloat = 0.43
+    static private let bottomIceRatio: CGFloat = 0.47
     static private let bottomIces = [
         ParfaitPart(.BottomIce, "赤系１.png", bottomIceRatio, "bass11.wav"),
         ParfaitPart(.BottomIce, "オレンジ系１.png", bottomIceRatio, "bass12.wav"),
