@@ -25,7 +25,7 @@ class ParfaitPart{
         .TopIce : 0,
         .Fruit : 0,
         .BottomIce : -8,
-        .Syrup : -8,
+        .Syrup : -4,
     ]
     
     // 各パーツがグラスに対して下から何pxの位置に描画されるべきかを調整する
@@ -34,7 +34,7 @@ class ParfaitPart{
         .TopIce : 3836,
         .Fruit : 3020,
         .BottomIce : 2940,
-        .Syrup : 1736,
+        .Syrup : 1650,
     ]
     
     // グラスの画像
@@ -42,27 +42,26 @@ class ParfaitPart{
     
     static private let toppings = [
         ParfaitPart(.Topping, "棒クッキー１.png", 0.6, "awa.wav", offsetX: 80),
-        ParfaitPart(.Topping, "ミント１.png", 0.8, "hail.wav", offsetX: 40, offsetY: 100),
-        ParfaitPart(.Topping, "フレーク１.png", 0.8, "kaze.wav"),
-        ParfaitPart(.Topping, "チョコスプレー１.png", 0.8, "mizu.wav"),
-        ParfaitPart(.Topping, "さくらんぼ１.png", 0.6, "mizu.wav"),
+        ParfaitPart(.Topping, "ミント１.png", 1.0, "hail.wav", offsetX: 40, offsetY: -200),
+        ParfaitPart(.Topping, "フレーク１.png", 0.8, "kaze.wav", offsetY: -120),
+        ParfaitPart(.Topping, "チョコスプレー１.png", 1.0, "mizu.wav", offsetY: -250),
+        ParfaitPart(.Topping, "さくらんぼ１.png", 0.6, "mizu.wav", offsetX: -10),
         // ParfaitPart(.Topping, "ハートクッキー１.png", 0.5, "kirakira8.wav"),
     ]
     
     static private let topIces = [
         ParfaitPart(.TopIce, "バニラアイス１.png", 0.86, "counter5.wav"),
         ParfaitPart(.TopIce, "レモンアイス１.png", 0.84, "counter4.wav"),
-        ParfaitPart(.TopIce, "チョコアイス１.png", 0.70, "counter1.wav"),
-        ParfaitPart(.TopIce, "プリン１.png", 0.84, "counter3.wav"),
-        ParfaitPart(.TopIce, "マカロン１.png", 0.88, "counter2.wav"),
+        ParfaitPart(.TopIce, "チョコアイス１.png", 0.70, "counter1.wav", offsetY: -20),
+        ParfaitPart(.TopIce, "プリン１.png", 0.84, "counter3.wav", offsetY: -25),
+        ParfaitPart(.TopIce, "マカロン１.png", 0.88, "counter2.wav", offsetY: -30),
         // ParfaitPart(.TopIce, "ベリーアイス１.png", 0.84, "counter5.wav"),
     ]
     
-    static private let fruitRatio: CGFloat = 0.76
     static private let fruits =  [
-        ParfaitPart(.Fruit, "レモン１.png", fruitRatio, "backing2.wav"),
-        ParfaitPart(.Fruit, "オレンジ１.png", fruitRatio, "backing5.wav"),
-        ParfaitPart(.Fruit, "メロン１.png", fruitRatio, "backing2.wav"),
+        ParfaitPart(.Fruit, "レモン１.png", 0.80, "backing2.wav"),
+        ParfaitPart(.Fruit, "オレンジ１.png", 0.77, "backing5.wav"),
+        ParfaitPart(.Fruit, "メロン１.png", 0.77, "backing2.wav"),
         ParfaitPart(.Fruit, "いちご１.png", 0.70, "backing3.wav"),
         ParfaitPart(.Fruit, "ぶどう１.png", 0.69, "backing4.wav"),
     ]
@@ -110,14 +109,14 @@ class ParfaitPart{
     
     private init(
             _ kind: Kind, _ imageName : String, _ imageRatio: CGFloat, _ trackPath: String,
-            offsetX: CGFloat = -1, offsetY: CGFloat = -1){
+            offsetX: CGFloat = 0, offsetY: CGFloat = 0){
         self.id = ParfaitPart.nextId
         self.kind = kind
         self.image = UIImage(named: imageName)!
         self.imageRatio = imageRatio
         self.trackURL = Bundle.main.bundleURL.appendingPathComponent(trackPath)
-        self.offsetX = offsetX < 0 ? ParfaitPart.defaultOffsetX[kind]! : offsetX
-        self.offsetY = offsetY < 0 ? ParfaitPart.defaultOffsetY[kind]! : offsetY
+        self.offsetX = ParfaitPart.defaultOffsetX[kind]! + offsetX
+        self.offsetY = ParfaitPart.defaultOffsetY[kind]! + offsetY
         
         ParfaitPart.nextId += 1
         ParfaitPart.mapping[self.id] = self
