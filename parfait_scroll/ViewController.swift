@@ -206,13 +206,15 @@ class ViewController: UIViewController {
     }
     
     func drawGlassContents(contentSize: CGSize? = nil, glassSize: CGSize? = nil) -> UIImage {
-        let targetContentSize = contentSize == nil ? self.glassContents.frame.size : contentSize
-        let targetGlassSize = glassSize == nil ? self.glass.frame.size : glassSize
+        let targetContentSize = contentSize == nil ? self.glassContents.frame.size : contentSize!
+        let targetGlassSize = glassSize == nil ? self.glass.frame.size : glassSize!
 
-        UIGraphicsBeginImageContextWithOptions(targetContentSize!, false, 0)
+        UIGraphicsBeginImageContextWithOptions(targetContentSize, false, 0)
         for kind: ParfaitPart.Kind in [.Syrup, .BottomIce, .Fruit, .TopIce, .Topping] {
             guard let part = currentParts[kind] else { continue }
-            let rect = part.getRectRelativeToGlass(glassSize: targetGlassSize!)
+            let rect = part.getRectRelativeToGlass(
+                glassSize: targetGlassSize,
+                parfaitMargin: targetContentSize.height - targetGlassSize.height)
             part.image.draw(in: rect)
         }
         let img = UIGraphicsGetImageFromCurrentImageContext()!

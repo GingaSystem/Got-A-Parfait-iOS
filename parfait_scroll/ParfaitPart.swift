@@ -20,7 +20,7 @@ class ParfaitPart{
     }
     
     // 各パーツが中央に対してX軸方向に何pxの位置に描画されるべきかを調整する
-    let offsetX : Dictionary<Kind, CGFloat> = [
+    private static let defaultOffsetX : Dictionary<Kind, CGFloat> = [
         .Topping : 30,
         .TopIce : 0,
         .Fruit : 0,
@@ -28,32 +28,31 @@ class ParfaitPart{
         .Syrup : -8,
     ]
     
-    // 各パーツがグラスに対して上から何pxの位置に描画されるべきかを調整する
-    let offsetY : Dictionary<Kind, CGFloat> = [
-        .Topping : 376,
-        .TopIce : 1000,
-        .Fruit : 1816,
-        .BottomIce : 1896,
-        .Syrup : 3096,
+    // 各パーツがグラスに対して下から何pxの位置に描画されるべきかを調整する
+    private static let defaultOffsetY : Dictionary<Kind, CGFloat> = [
+        .Topping : 4460,
+        .TopIce : 3836,
+        .Fruit : 3020,
+        .BottomIce : 2940,
+        .Syrup : 1736,
     ]
     
     // グラスの画像
     static private let glass = UIImage(named: "パフェグラス１.png")!
     
-    static private let toppingRatio: CGFloat = 0.4
     static private let toppings = [
-        ParfaitPart(.Topping, "棒クッキー１.png", toppingRatio, "awa.wav"),
-        ParfaitPart(.Topping, "ミント１.png", toppingRatio, "hail.wav"),
-        ParfaitPart(.Topping, "フレーク１.png", toppingRatio, "kaze.wav"),
-        ParfaitPart(.Topping, "チョコスプレー１.png", toppingRatio, "mizu.wav"),
-        ParfaitPart(.Topping, "さくらんぼ１.png", toppingRatio, "mizu.wav"),
-        // ParfaitPart(.Topping, "ハートクッキー１.png", toppingRatio, "kirakira8.wav"),
+        ParfaitPart(.Topping, "棒クッキー１.png", 0.6, "awa.wav", offsetX: 80),
+        ParfaitPart(.Topping, "ミント１.png", 0.8, "hail.wav", offsetX: 40, offsetY: 100),
+        ParfaitPart(.Topping, "フレーク１.png", 0.8, "kaze.wav"),
+        ParfaitPart(.Topping, "チョコスプレー１.png", 0.8, "mizu.wav"),
+        ParfaitPart(.Topping, "さくらんぼ１.png", 0.6, "mizu.wav"),
+        // ParfaitPart(.Topping, "ハートクッキー１.png", 0.5, "kirakira8.wav"),
     ]
     
     static private let topIces = [
         ParfaitPart(.TopIce, "バニラアイス１.png", 0.86, "counter5.wav"),
         ParfaitPart(.TopIce, "レモンアイス１.png", 0.84, "counter4.wav"),
-        ParfaitPart(.TopIce, "チョコアイス１.png", 0.76, "counter1.wav"),
+        ParfaitPart(.TopIce, "チョコアイス１.png", 0.70, "counter1.wav"),
         ParfaitPart(.TopIce, "プリン１.png", 0.84, "counter3.wav"),
         ParfaitPart(.TopIce, "マカロン１.png", 0.88, "counter2.wav"),
         // ParfaitPart(.TopIce, "ベリーアイス１.png", 0.84, "counter5.wav"),
@@ -64,8 +63,8 @@ class ParfaitPart{
         ParfaitPart(.Fruit, "レモン１.png", fruitRatio, "backing2.wav"),
         ParfaitPart(.Fruit, "オレンジ１.png", fruitRatio, "backing5.wav"),
         ParfaitPart(.Fruit, "メロン１.png", fruitRatio, "backing2.wav"),
-        ParfaitPart(.Fruit, "いちご１.png", fruitRatio, "backing3.wav"),
-        ParfaitPart(.Fruit, "ぶどう１.png", fruitRatio, "backing4.wav"),
+        ParfaitPart(.Fruit, "いちご１.png", 0.70, "backing3.wav"),
+        ParfaitPart(.Fruit, "ぶどう１.png", 0.69, "backing4.wav"),
     ]
     
     static private let bottomIceRatio: CGFloat = 0.43
@@ -102,15 +101,23 @@ class ParfaitPart{
     // パーツの画像のグラスに対する大きさの比
     let imageRatio : CGFloat
     
+    // 画像のオフセット
+    let offsetX : CGFloat
+    let offsetY : CGFloat
+    
     // パーツに対応するトラックの名前
     let trackURL : URL
     
-    private init(_ kind: Kind, _ imageName : String, _ imageRatio: CGFloat, _ trackPath: String){
+    private init(
+            _ kind: Kind, _ imageName : String, _ imageRatio: CGFloat, _ trackPath: String,
+            offsetX: CGFloat = -1, offsetY: CGFloat = -1){
         self.id = ParfaitPart.nextId
         self.kind = kind
         self.image = UIImage(named: imageName)!
         self.imageRatio = imageRatio
         self.trackURL = Bundle.main.bundleURL.appendingPathComponent(trackPath)
+        self.offsetX = offsetX < 0 ? ParfaitPart.defaultOffsetX[kind]! : offsetX
+        self.offsetY = offsetY < 0 ? ParfaitPart.defaultOffsetY[kind]! : offsetY
         
         ParfaitPart.nextId += 1
         ParfaitPart.mapping[self.id] = self
@@ -140,12 +147,13 @@ class ParfaitPart{
         return ParfaitPart.mapping[id]!
     }
     
-    func getRectRelativeToGlass(glassSize : CGSize) -> CGRect {
-        let ratio = glassSize.height / ParfaitPart.glass.size.height
+    func getRectRelativeToGlass(glassSize actualGlassSize : CGSize, parfaitMargin: CGFloat) -> CGRect {
+        let originalGlassHeight = ParfaitPart.glass.size.height
+        let ratio = actualGlassSize.height / originalGlassHeight
         let h = self.image.size.height * ratio * self.imageRatio
         let w = self.image.size.width * ratio * self.imageRatio
-        let x = ((glassSize.width - w + offsetX[self.kind]!) / 2.0)
-        let y = offsetY[self.kind]! * ratio
+        let x = ((actualGlassSize.width - w + self.offsetX) / 2.0)
+        let y = parfaitMargin + (originalGlassHeight - self.offsetY) * ratio
         return CGRect(x: x, y: y, width: w, height: h)
     }
 }
