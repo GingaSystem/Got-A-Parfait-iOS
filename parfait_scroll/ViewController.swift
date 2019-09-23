@@ -10,6 +10,8 @@ import UIKit
 import AVFoundation
 import Accounts
 
+let GLASS_EMPTY_BY_DEFAULT = false
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var pickerScroll: UIScrollView!
@@ -42,11 +44,13 @@ class ViewController: UIViewController {
         spoon.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.spoonTapped(_:))))
         
         // 初期状態の設定
-        currentParts[.Syrup] = ParfaitPart.getSyrups()[0]
-        currentParts[.BottomIce] = ParfaitPart.getBottomIces()[0]
-        currentParts[.Fruit] = ParfaitPart.getFruits()[0]
-        currentParts[.TopIce] = ParfaitPart.getTopIces()[0]
-        currentParts[.Topping] = ParfaitPart.getToppings()[0]
+        if !GLASS_EMPTY_BY_DEFAULT {
+            currentParts[.Syrup] = ParfaitPart.getSyrups()[0]
+            currentParts[.BottomIce] = ParfaitPart.getBottomIces()[0]
+            currentParts[.Fruit] = ParfaitPart.getFruits()[0]
+            currentParts[.TopIce] = ParfaitPart.getTopIces()[0]
+            currentParts[.Topping] = ParfaitPart.getToppings()[0]
+        }
         refreshGlassContents()
     }
     
