@@ -154,13 +154,13 @@ class ViewController: UIViewController {
 
     @objc func spoonTapped(_ sender: UITapGestureRecognizer) {
         print("spoon tapped")
-        previewTrack(parts: currentParts)
         shareParfait()
     }
     
     func refreshGlassContents() {
         let img = drawGlassContents()
         glassContents.image = img
+        previewTrack(parts: currentParts)
     }
 
     func shareParfait() {
