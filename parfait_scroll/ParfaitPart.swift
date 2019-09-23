@@ -70,20 +70,20 @@ class ParfaitPart{
     
     static private let bottomIceRatio: CGFloat = 0.43
     static private let bottomIces = [
-        ParfaitPart(.BottomIce, "赤系１.png", bottomIceRatio, "bass3.wav"),
-        ParfaitPart(.BottomIce, "オレンジ系１.png", bottomIceRatio, "bass4_1.wav"),
-        ParfaitPart(.BottomIce, "マカロン系１.png", bottomIceRatio, "bass3_1.wav"),
-        ParfaitPart(.BottomIce, "ホッピングシャワー系１.png", bottomIceRatio, "bass2.wav"),
+        ParfaitPart(.BottomIce, "赤系１.png", bottomIceRatio, "bass11.wav"),
+        ParfaitPart(.BottomIce, "オレンジ系１.png", bottomIceRatio, "bass12.wav"),
+        ParfaitPart(.BottomIce, "マカロン系１.png", bottomIceRatio, "bass13.wav"),
+        ParfaitPart(.BottomIce, "ホッピングシャワー系１.png", bottomIceRatio, "bass14.wav"),
         ParfaitPart(.BottomIce, "紫１.png", bottomIceRatio, "bass1.wav"),
     ]
     
     static private let syrupRatio: CGFloat = 0.5
     static private let syrups = [
-        ParfaitPart(.Syrup, "ピンク系１.png", syrupRatio, "drum5_1.wav"),
-        ParfaitPart(.Syrup, "緑系１.png", syrupRatio, "drum2_1.wav"),
-        ParfaitPart(.Syrup, "青系１.png", syrupRatio, "drum3_1.wav"),
-        ParfaitPart(.Syrup, "紫系１.png", syrupRatio, "drum1_1.wav"),
-        ParfaitPart(.Syrup, "モカ系１.png", syrupRatio, "drum4_1.wav"),
+        ParfaitPart(.Syrup, "ピンク系１.png", syrupRatio, "drum1.wav"),
+        ParfaitPart(.Syrup, "緑系１.png", syrupRatio, "drum2.wav"),
+        ParfaitPart(.Syrup, "青系１.png", syrupRatio, "drum3.wav"),
+        ParfaitPart(.Syrup, "紫系１.png", syrupRatio, "drum4.wav"),
+        ParfaitPart(.Syrup, "モカ系１.png", syrupRatio, "drum5.wav"),
     ]
     
     static private var nextId: Int = 0
