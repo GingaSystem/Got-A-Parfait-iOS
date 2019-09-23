@@ -164,8 +164,8 @@ class ViewController: UIViewController {
         // ビデオトラック作成
         renderVideo(
             image: drawGlassAndContents(
-                contentSize: CGSize(width: 952, height: 1600),
-                glassSize: CGSize(width: 952, height: 1230)),
+                contentSize: CGSize(width: 952, height: 2000),  // x 1.3
+                glassSize: CGSize(width: 952, height: 1538)),  // 2302:3720
             length: trackLength,
             cb: {
                 (videoURL: URL) -> Void in
@@ -207,7 +207,10 @@ class ViewController: UIViewController {
         ctx.setFillColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)
         UIRectFill(entireRegionRect)
         self.glass.image!.draw(in: glassRegionRect)
-        drawGlassContents(contentSize: contentSize, glassSize: glassSize).draw(in: CGRect(x: 0, y: 0, width: contentSize.width, height: contentSize.height))
+        drawGlassContents(
+            contentSize: contentSize,
+            glassSize: glassSize).draw(
+                in: CGRect(x: 0, y: 0, width: contentSize.width, height: contentSize.height))
          let img = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         return img
