@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Glass.png" translatesAutoresizingMaskIntoConstraints="NO" id="8EP-XA-oE4" userLabel="Glass">
-                                <rect key="frame" x="66" y="279" width="243" height="388"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="パフェグラス１.png" translatesAutoresizingMaskIntoConstraints="NO" id="8EP-XA-oE4" userLabel="Glass">
+                                <rect key="frame" x="87.5" y="343.5" width="200" height="323.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="8EP-XA-oE4" secondAttribute="height" multiplier="351:561" id="NgY-3B-K6u"/>
+                                    <constraint firstAttribute="width" secondItem="8EP-XA-oE4" secondAttribute="height" multiplier="2302:3720" id="NgY-3B-K6u"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DUv-SS-mZ0" userLabel="GlassContents">
-                                <rect key="frame" x="66" y="162.5" width="243" height="504.5"/>
+                                <rect key="frame" x="87.5" y="246.5" width="200" height="420.5"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feu-2t-D0a" userLabel="PartPickerScroll">
                                 <rect key="frame" x="0.0" y="20" width="375" height="194"/>
@@ -44,8 +44,8 @@
                                     <constraint firstItem="nuF-2Y-31I" firstAttribute="width" secondItem="feu-2t-D0a" secondAttribute="width" multiplier="5" id="uIj-u2-fIN"/>
                                 </constraints>
                             </scrollView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spoon.png" translatesAutoresizingMaskIntoConstraints="NO" id="NoB-XZ-xU8">
-                                <rect key="frame" x="309" y="473" width="25" height="194"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スプーン１.png" translatesAutoresizingMaskIntoConstraints="NO" id="NoB-XZ-xU8">
+                                <rect key="frame" x="287.5" y="505.5" width="21" height="161.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NoB-XZ-xU8" secondAttribute="height" multiplier="25:194" id="lFW-Up-JuA"/>
                                 </constraints>
@@ -95,7 +95,7 @@
                             <constraint firstItem="NoB-XZ-xU8" firstAttribute="height" secondItem="8EP-XA-oE4" secondAttribute="height" multiplier="0.5" id="k0c-4A-49t"/>
                             <constraint firstItem="DUv-SS-mZ0" firstAttribute="height" secondItem="8EP-XA-oE4" secondAttribute="height" multiplier="1.3" id="ozQ-eh-HAn"/>
                             <constraint firstItem="mdq-Xt-k5r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sDq-ch-6cL"/>
-                            <constraint firstItem="8EP-XA-oE4" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.6" id="uY0-z1-btV"/>
+                            <constraint firstItem="8EP-XA-oE4" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="uY0-z1-btV"/>
                             <constraint firstItem="feu-2t-D0a" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="wdG-Tc-cr9"/>
                             <constraint firstItem="DUv-SS-mZ0" firstAttribute="width" secondItem="8EP-XA-oE4" secondAttribute="width" id="yDu-62-9la"/>
                         </constraints>
@@ -117,7 +117,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Glass.png" width="351" height="561"/>
-        <image name="Spoon.png" width="176.91429138183594" height="656.22857666015625"/>
+        <image name="スプーン１.png" width="176.91429138183594" height="656.22857666015625"/>
+        <image name="パフェグラス１.png" width="473.55429077148438" height="765.25714111328125"/>
     </resources>
 </document>

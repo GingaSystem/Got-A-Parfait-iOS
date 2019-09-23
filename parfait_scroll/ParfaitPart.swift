@@ -25,60 +25,67 @@ class ParfaitPart{
         .TopIce : 0,
         .Fruit : 0,
         .BottomIce : 0,
-        .Syrup : 0,
-        ]
+        .Syrup : -10,
+    ]
     
     // 各パーツがグラスに対して上から何pxの位置に描画されるべきかを調整する
     let offsetY : Dictionary<Kind, CGFloat> = [
-        .Topping : 0,
-        .TopIce : 40,
-        .Fruit : 180,
-        .BottomIce : 280,
-        .Syrup : 470,
-        ]
+        .Topping : 376,
+        .TopIce : 1000,
+        .Fruit : 1816,
+        .BottomIce : 1896,
+        .Syrup : 3096,
+    ]
     
     // グラスの画像
-    static private let glass = UIImage(named: "Glass")!
+    static private let glass = UIImage(named: "パフェグラス１.png")!
     
+    static private let toppingRatio: CGFloat = 0.4
     static private let toppings = [
-        ParfaitPart(.Topping, "Topping1","awa.wav"),
-        ParfaitPart(.Topping, "Topping2","kirakira8.wav"),
-        ParfaitPart(.Topping, "Topping3","kaze.wav"),
-        ParfaitPart(.Topping, "Topping4","hail.wav"),
-        ParfaitPart(.Topping, "Topping5","mizu.wav"),
-        ]
+        ParfaitPart(.Topping, "棒クッキー１.png", toppingRatio, "awa.wav"),
+        ParfaitPart(.Topping, "ミント１.png", toppingRatio, "hail.wav"),
+        ParfaitPart(.Topping, "フレーク１.png", toppingRatio, "kaze.wav"),
+        ParfaitPart(.Topping, "チョコスプレー１.png", toppingRatio, "mizu.wav"),
+        ParfaitPart(.Topping, "さくらんぼ１.png", toppingRatio, "mizu.wav"),
+        // ParfaitPart(.Topping, "ハートクッキー１.png", toppingRatio, "kirakira8.wav"),
+    ]
     
+    static private let topIceRatio: CGFloat = 0.82
     static private let topIces = [
-        ParfaitPart(.TopIce, "TopIce1","counter3.wav"),
-        ParfaitPart(.TopIce, "TopIce2","counter2.wav"),
-        ParfaitPart(.TopIce, "TopIce3","counter1.wav"),
-        ParfaitPart(.TopIce, "TopIce4","counter4.wav"),
-        ParfaitPart(.TopIce, "TopIce5","counter5.wav"),
-        ]
+        ParfaitPart(.TopIce, "バニラアイス１.png", topIceRatio, "counter5.wav"),
+        ParfaitPart(.TopIce, "レモンアイス１.png", topIceRatio, "counter4.wav"),
+        ParfaitPart(.TopIce, "チョコアイス１.png", topIceRatio, "counter1.wav"),
+        ParfaitPart(.TopIce, "プリン１.png", topIceRatio, "counter3.wav"),
+        ParfaitPart(.TopIce, "マカロン１.png", topIceRatio, "counter2.wav"),
+        // ParfaitPart(.TopIce, "ベリーアイス１.png", topIceRatio, "counter5.wav"),
+    ]
     
+    static private let fruitRatio: CGFloat = 0.72
     static private let fruits =  [
-        ParfaitPart(.Fruit, "Fruits1","backing2.wav"),
-        ParfaitPart(.Fruit, "Fruits2","backing2.wav"),
-        ParfaitPart(.Fruit, "Fruits3","backing3.wav"),
-        ParfaitPart(.Fruit, "Fruits4","backing4.wav"),
-        ParfaitPart(.Fruit, "Fruits5","backing5.wav"),
-        ]
+        ParfaitPart(.Fruit, "レモン１.png", fruitRatio, "backing2.wav"),
+        ParfaitPart(.Fruit, "オレンジ１.png", fruitRatio, "backing5.wav"),
+        ParfaitPart(.Fruit, "メロン１.png", fruitRatio, "backing2.wav"),
+        ParfaitPart(.Fruit, "いちご１.png", fruitRatio, "backing3.wav"),
+        ParfaitPart(.Fruit, "ぶどう１.png", fruitRatio, "backing4.wav"),
+    ]
     
+    static private let bottomIceRatio: CGFloat = 0.43
     static private let bottomIces = [
-        ParfaitPart(.BottomIce, "BottomIce1","bass1.wav"),
-        ParfaitPart(.BottomIce, "BottomIce2","bass3.wav"),
-        ParfaitPart(.BottomIce, "BottomIce3","bass3_1.wav"),
-        ParfaitPart(.BottomIce, "BottomIce4","bass4_1.wav"),
-        ParfaitPart(.BottomIce, "BottomIce5","bass2.wav"),
-        ]
+        ParfaitPart(.BottomIce, "赤系１.png", bottomIceRatio, "bass3.wav"),
+        ParfaitPart(.BottomIce, "オレンジ系１.png", bottomIceRatio, "bass4_1.wav"),
+        ParfaitPart(.BottomIce, "マカロン系１.png", bottomIceRatio, "bass3_1.wav"),
+        ParfaitPart(.BottomIce, "ホッピングシャワー系１.png", bottomIceRatio, "bass2.wav"),
+        ParfaitPart(.BottomIce, "紫１.png", bottomIceRatio, "bass1.wav"),
+    ]
     
+    static private let syrupRatio: CGFloat = 0.5
     static private let syrups = [
-        ParfaitPart(.Syrup, "Syrup1","drum1_1.wav"),
-        ParfaitPart(.Syrup, "Syrup2","drum2_1.wav"),
-        ParfaitPart(.Syrup, "Syrup3","drum3_1.wav"),
-        ParfaitPart(.Syrup, "Syrup4","drum4_1.wav"),
-        ParfaitPart(.Syrup, "Syrup5","drum5_1.wav"),
-        ]
+        ParfaitPart(.Syrup, "ピンク系１.png", syrupRatio, "drum5_1.wav"),
+        ParfaitPart(.Syrup, "緑系１.png", syrupRatio, "drum2_1.wav"),
+        ParfaitPart(.Syrup, "青系１.png", syrupRatio, "drum3_1.wav"),
+        ParfaitPart(.Syrup, "紫系１.png", syrupRatio, "drum1_1.wav"),
+        ParfaitPart(.Syrup, "モカ系１.png", syrupRatio, "drum4_1.wav"),
+    ]
     
     static private var nextId: Int = 0
     
@@ -93,13 +100,17 @@ class ParfaitPart{
     // パーツの画像
     let image : UIImage
     
+    // パーツの画像のグラスに対する大きさの比
+    let imageRatio : CGFloat
+    
     // パーツに対応するトラックの名前
     let trackURL : URL
     
-    private init(_ kind: Kind, _ imageName : String, _ trackPath: String){
+    private init(_ kind: Kind, _ imageName : String, _ imageRatio: CGFloat, _ trackPath: String){
         self.id = ParfaitPart.nextId
         self.kind = kind
         self.image = UIImage(named: imageName)!
+        self.imageRatio = imageRatio
         self.trackURL = Bundle.main.bundleURL.appendingPathComponent(trackPath)
         
         ParfaitPart.nextId += 1
@@ -132,8 +143,8 @@ class ParfaitPart{
     
     func getRectRelativeToGlass(glassSize : CGSize) -> CGRect {
         let ratio = glassSize.height / ParfaitPart.glass.size.height
-        let h = self.image.size.height * ratio
-        let w = self.image.size.width * ratio
+        let h = self.image.size.height * ratio * self.imageRatio
+        let w = self.image.size.width * ratio * self.imageRatio
         let x = ((glassSize.width - w + offsetX[self.kind]!) / 2.0)
         let y = offsetY[self.kind]! * ratio
         return CGRect(x: x, y: y, width: w, height: h)
