@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var glass: UIImageView!
     @IBOutlet weak var glassContents: UIImageView!
     @IBOutlet weak var spoon: UIImageView!
+    @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var recordStatus: UILabel!
     @IBOutlet weak var makingParfaitView: UIVisualEffectView!
     
     // ドラッグされているパーツ
@@ -38,7 +40,11 @@ class ViewController: UIViewController {
         let interaction = UIDropInteraction(delegate: self)
         glassContents.addInteraction(interaction)
         glassContents.isUserInteractionEnabled = true
-        
+
+        // グラスをタップしたら再生
+        glassContents.isUserInteractionEnabled = true
+        glassContents.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.glassContentsTapped(_:))))
+
         // 共有ボタン
         spoon.isUserInteractionEnabled = true
         spoon.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.spoonTapped(_:))))
@@ -140,16 +146,21 @@ class ViewController: UIViewController {
         
         return pageView
     }
-    
+
+    @objc func glassContentsTapped(_ sender: UITapGestureRecognizer) {
+        print("glass contents tapped")
+        previewTrack(parts: currentParts)
+    }
+
     @objc func spoonTapped(_ sender: UITapGestureRecognizer) {
         print("spoon tapped")
+        previewTrack(parts: currentParts)
         shareParfait()
     }
     
     func refreshGlassContents() {
         let img = drawGlassContents()
         glassContents.image = img
-        previewTrack(parts: currentParts)
     }
 
     func shareParfait() {
@@ -231,6 +242,23 @@ class ViewController: UIViewController {
         let img = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         return img
+    }
+    
+    @IBAction func recordButtonPushed(_ sender: Any) {
+        // TODO fix...
+        if self.recordStatus.text == "Recorded" {
+            discardRecording()
+            recordStatus.text = "Record"
+            recordButton.setTitle("🗣", for: .normal)
+        } else if self.recordStatus.text == "Recording..." {
+            // do nothing during recoridng
+        } else {
+            recordVoice(parts: currentParts, callback: {
+                self.recordStatus.text = "Recorded"
+                self.recordButton.setTitle("🗑", for: .normal)
+            })
+            recordStatus.text = "Recording..."
+        }
     }
 }
 

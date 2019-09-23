@@ -37,6 +37,8 @@
 		960900732338E13500B74FDF /* 青系１.png in Resources */ = {isa = PBXBuildFile; fileRef = 960900552338E13500B74FDF /* 青系１.png */; };
 		960900742338E13500B74FDF /* モカ系１.png in Resources */ = {isa = PBXBuildFile; fileRef = 960900562338E13500B74FDF /* モカ系１.png */; };
 		960900762338E39200B74FDF /* さくらんぼ１.png in Resources */ = {isa = PBXBuildFile; fileRef = 960900752338E39200B74FDF /* さくらんぼ１.png */; };
+		96090078233921AB00B74FDF /* ParfaitAudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96090077233921AB00B74FDF /* ParfaitAudioEngine.swift */; };
+		96394847233946460089D95E /* CountIn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96394846233946460089D95E /* CountIn.mp3 */; };
 		96930DCE2336262A0063110F /* ParfaitVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96930DCD2336262A0063110F /* ParfaitVideo.swift */; };
 		96930DD0233697750063110F /* ParfaitMix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96930DCF233697750063110F /* ParfaitMix.swift */; };
 		96FA27FD232F899B00E8181D /* se_maoudamashii_effect10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27EE232F899B00E8181D /* se_maoudamashii_effect10.mp3 */; };
@@ -139,6 +141,8 @@
 		960900552338E13500B74FDF /* 青系１.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "青系１.png"; sourceTree = "<group>"; };
 		960900562338E13500B74FDF /* モカ系１.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "モカ系１.png"; sourceTree = "<group>"; };
 		960900752338E39200B74FDF /* さくらんぼ１.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "さくらんぼ１.png"; sourceTree = "<group>"; };
+		96090077233921AB00B74FDF /* ParfaitAudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParfaitAudioEngine.swift; sourceTree = "<group>"; };
+		96394846233946460089D95E /* CountIn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CountIn.mp3; sourceTree = "<group>"; };
 		96930DCD2336262A0063110F /* ParfaitVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParfaitVideo.swift; sourceTree = "<group>"; };
 		96930DCF233697750063110F /* ParfaitMix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParfaitMix.swift; sourceTree = "<group>"; };
 		96FA27EE232F899B00E8181D /* se_maoudamashii_effect10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect10.mp3; sourceTree = "<group>"; };
@@ -311,6 +315,7 @@
 		96FA280D232F89A500E8181D /* Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				96394846233946460089D95E /* CountIn.mp3 */,
 				A5DC6DF0233900CC002D4B8C /* drum1.wav */,
 				A5DC6DF2233900CC002D4B8C /* drum2.wav */,
 				A5DC6DF1233900CC002D4B8C /* drum3.wav */,
@@ -400,6 +405,7 @@
 				A56893DA22FF0702009B5640 /* ViewController.swift */,
 				A505FCB3232E1676002B956C /* ParfaitPart.swift */,
 				96FA280E232FDECA00E8181D /* ParfaitAudio.swift */,
+				96090077233921AB00B74FDF /* ParfaitAudioEngine.swift */,
 				96930DCD2336262A0063110F /* ParfaitVideo.swift */,
 				96930DCF233697750063110F /* ParfaitMix.swift */,
 				A56893DC22FF0702009B5640 /* Main.storyboard */,
@@ -553,6 +559,7 @@
 				A52D0BD82335252E00739EA4 /* drum4_1.wav in Resources */,
 				A52D0BDB2335252E00739EA4 /* drum2_1.wav in Resources */,
 				A5FDA2AE23322A63008ED449 /* counter3.wav in Resources */,
+				96394847233946460089D95E /* CountIn.mp3 in Resources */,
 				A5FDA2AB23322A63008ED449 /* counter2.wav in Resources */,
 				A5FDA2B823322A7A008ED449 /* bass2.wav in Resources */,
 				96FA27FE232F899B00E8181D /* se_maoudamashii_effect05.mp3 in Resources */,
@@ -574,6 +581,7 @@
 				96930DD0233697750063110F /* ParfaitMix.swift in Sources */,
 				A56893DB22FF0702009B5640 /* ViewController.swift in Sources */,
 				A505FCB4232E1676002B956C /* ParfaitPart.swift in Sources */,
+				96090078233921AB00B74FDF /* ParfaitAudioEngine.swift in Sources */,
 				96FA280F232FDECB00E8181D /* ParfaitAudio.swift in Sources */,
 				96930DCE2336262A0063110F /* ParfaitVideo.swift in Sources */,
 				A56893D922FF0702009B5640 /* AppDelegate.swift in Sources */,

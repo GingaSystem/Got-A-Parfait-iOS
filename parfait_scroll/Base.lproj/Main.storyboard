@@ -18,14 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyQ-b9-tm3" userLabel="RecordButton">
+                                <rect key="frame" x="10" y="627" width="30" height="30"/>
+                                <state key="normal" title="🗣"/>
+                                <connections>
+                                    <action selector="recordButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6L8-Xu-tO1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nE-v1-Fg5" userLabel="RecordStatus">
+                                <rect key="frame" x="40" y="635.5" width="41" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="パフェグラス１.png" translatesAutoresizingMaskIntoConstraints="NO" id="8EP-XA-oE4" userLabel="Glass">
-                                <rect key="frame" x="77.5" y="311" width="220" height="356"/>
+                                <rect key="frame" x="77.5" y="301" width="220" height="356"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8EP-XA-oE4" secondAttribute="height" multiplier="2302:3720" id="NgY-3B-K6u"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DUv-SS-mZ0" userLabel="GlassContents">
-                                <rect key="frame" x="77.5" y="204.5" width="220" height="462.5"/>
+                                <rect key="frame" x="77.5" y="194.5" width="220" height="462.5"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feu-2t-D0a" userLabel="PartPickerScroll">
                                 <rect key="frame" x="0.0" y="20" width="375" height="194"/>
@@ -80,6 +93,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="9nE-v1-Fg5" firstAttribute="centerY" secondItem="TyQ-b9-tm3" secondAttribute="centerY" constant="1" id="429-Ew-Bxl"/>
                             <constraint firstItem="mdq-Xt-k5r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7eL-e7-CTl"/>
                             <constraint firstItem="feu-2t-D0a" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7lj-rj-yTQ"/>
                             <constraint firstItem="NoB-XZ-xU8" firstAttribute="leading" secondItem="8EP-XA-oE4" secondAttribute="trailing" id="8Ob-go-Q2p"/>
@@ -90,12 +104,15 @@
                             <constraint firstItem="NoB-XZ-xU8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aF1-wF-bnU"/>
                             <constraint firstItem="feu-2t-D0a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aQD-wg-bUn"/>
                             <constraint firstItem="mdq-Xt-k5r" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="cCV-c2-Otu"/>
-                            <constraint firstItem="8EP-XA-oE4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dvU-6z-03L"/>
+                            <constraint firstItem="9nE-v1-Fg5" firstAttribute="leading" secondItem="TyQ-b9-tm3" secondAttribute="trailing" id="cue-rs-ocy"/>
+                            <constraint firstItem="8EP-XA-oE4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="dvU-6z-03L"/>
                             <constraint firstItem="mdq-Xt-k5r" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="fxS-21-sEZ"/>
                             <constraint firstItem="NoB-XZ-xU8" firstAttribute="height" secondItem="8EP-XA-oE4" secondAttribute="height" multiplier="0.7" id="k0c-4A-49t"/>
                             <constraint firstItem="DUv-SS-mZ0" firstAttribute="height" secondItem="8EP-XA-oE4" secondAttribute="height" multiplier="1.3" id="ozQ-eh-HAn"/>
+                            <constraint firstItem="TyQ-b9-tm3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="p9W-rY-d52"/>
                             <constraint firstItem="mdq-Xt-k5r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sDq-ch-6cL"/>
                             <constraint firstItem="8EP-XA-oE4" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.55" id="uY0-z1-btV"/>
+                            <constraint firstItem="TyQ-b9-tm3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="wRs-eW-ouo"/>
                             <constraint firstItem="feu-2t-D0a" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="wdG-Tc-cr9"/>
                             <constraint firstItem="DUv-SS-mZ0" firstAttribute="width" secondItem="8EP-XA-oE4" secondAttribute="width" id="yDu-62-9la"/>
                         </constraints>
@@ -108,6 +125,8 @@
                         <outlet property="makingParfaitView" destination="mdq-Xt-k5r" id="eyX-hn-qvG"/>
                         <outlet property="pickerScroll" destination="feu-2t-D0a" id="6KY-ap-E8K"/>
                         <outlet property="pickerScrollContentView" destination="nuF-2Y-31I" id="ijV-Qe-Csx"/>
+                        <outlet property="recordButton" destination="TyQ-b9-tm3" id="IFg-Nt-dL3"/>
+                        <outlet property="recordStatus" destination="9nE-v1-Fg5" id="xHV-qR-NNz"/>
                         <outlet property="spoon" destination="NoB-XZ-xU8" id="6dt-Nb-ijx"/>
                     </connections>
                 </viewController>
