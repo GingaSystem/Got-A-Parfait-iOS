@@ -46,7 +46,8 @@ class ParfaitPart{
         ParfaitPart(.Topping, "フレーク１.png", 0.8, "kaze.wav", offsetY: -120),
         ParfaitPart(.Topping, "チョコスプレー１.png", 1.0, "mizu.wav", offsetY: -250),
         ParfaitPart(.Topping, "さくらんぼ１.png", 0.6, "mizu.wav", offsetX: -10),
-        // ParfaitPart(.Topping, "ハートクッキー１.png", 0.5, "kirakira8.wav"),
+        ParfaitPart(.Topping, "マカロン１.png", 1.1, "counter2.wav", offsetY: -30),
+        ParfaitPart(.Topping, "ハートクッキー１.png", 0.5, "kirakira8.wav"),
     ]
     
     static private let topIces = [
@@ -54,8 +55,7 @@ class ParfaitPart{
         ParfaitPart(.TopIce, "レモンアイス１.png", 1.1, "counter4.wav"),
         ParfaitPart(.TopIce, "チョコアイス１.png", 1.0, "counter1.wav", offsetY: -20),
         ParfaitPart(.TopIce, "プリン１.png", 1.1, "counter3.wav", offsetY: -25),
-        ParfaitPart(.TopIce, "マカロン１.png", 1.1, "counter2.wav", offsetY: -30),
-        // ParfaitPart(.TopIce, "ベリーアイス１.png", 0.84, "counter5.wav"),
+        ParfaitPart(.TopIce, "ベリーアイス１.png", 0.70, "counter5.wav", offsetY: 100),
     ]
     
     static private let fruits =  [
