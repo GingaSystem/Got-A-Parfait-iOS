@@ -23,9 +23,10 @@ func previewTrack(parts: Dictionary<ParfaitPart.Kind, ParfaitPart>, loop: Bool =
     stopPreview()
     
     if parts.count == 0 {
-        preparePreview(parts: parts, loop: loop)
-        _ = startPreview()
+        return
     }
+    preparePreview(parts: parts, loop: loop)
+    _ = startPreview()
 }
 
 private func startPreview(delay: TimeInterval = 0.01) -> TimeInterval {
