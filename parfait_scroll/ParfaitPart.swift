@@ -24,8 +24,8 @@ class ParfaitPart{
         .Topping : 30,
         .TopIce : 0,
         .Fruit : 0,
-        .BottomIce : 0,
-        .Syrup : -10,
+        .BottomIce : -8,
+        .Syrup : -8,
     ]
     
     // 各パーツがグラスに対して上から何pxの位置に描画されるべきかを調整する
@@ -50,17 +50,16 @@ class ParfaitPart{
         // ParfaitPart(.Topping, "ハートクッキー１.png", toppingRatio, "kirakira8.wav"),
     ]
     
-    static private let topIceRatio: CGFloat = 0.82
     static private let topIces = [
-        ParfaitPart(.TopIce, "バニラアイス１.png", topIceRatio, "counter5.wav"),
-        ParfaitPart(.TopIce, "レモンアイス１.png", topIceRatio, "counter4.wav"),
-        ParfaitPart(.TopIce, "チョコアイス１.png", topIceRatio, "counter1.wav"),
-        ParfaitPart(.TopIce, "プリン１.png", topIceRatio, "counter3.wav"),
-        ParfaitPart(.TopIce, "マカロン１.png", topIceRatio, "counter2.wav"),
-        // ParfaitPart(.TopIce, "ベリーアイス１.png", topIceRatio, "counter5.wav"),
+        ParfaitPart(.TopIce, "バニラアイス１.png", 0.86, "counter5.wav"),
+        ParfaitPart(.TopIce, "レモンアイス１.png", 0.84, "counter4.wav"),
+        ParfaitPart(.TopIce, "チョコアイス１.png", 0.76, "counter1.wav"),
+        ParfaitPart(.TopIce, "プリン１.png", 0.84, "counter3.wav"),
+        ParfaitPart(.TopIce, "マカロン１.png", 0.88, "counter2.wav"),
+        // ParfaitPart(.TopIce, "ベリーアイス１.png", 0.84, "counter5.wav"),
     ]
     
-    static private let fruitRatio: CGFloat = 0.72
+    static private let fruitRatio: CGFloat = 0.76
     static private let fruits =  [
         ParfaitPart(.Fruit, "レモン１.png", fruitRatio, "backing2.wav"),
         ParfaitPart(.Fruit, "オレンジ１.png", fruitRatio, "backing5.wav"),

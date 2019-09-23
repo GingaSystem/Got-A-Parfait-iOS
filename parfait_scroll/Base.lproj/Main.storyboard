@@ -92,10 +92,10 @@
                             <constraint firstItem="mdq-Xt-k5r" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="cCV-c2-Otu"/>
                             <constraint firstItem="8EP-XA-oE4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dvU-6z-03L"/>
                             <constraint firstItem="mdq-Xt-k5r" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="fxS-21-sEZ"/>
-                            <constraint firstItem="NoB-XZ-xU8" firstAttribute="height" secondItem="8EP-XA-oE4" secondAttribute="height" multiplier="0.5" id="k0c-4A-49t"/>
+                            <constraint firstItem="NoB-XZ-xU8" firstAttribute="height" secondItem="8EP-XA-oE4" secondAttribute="height" multiplier="0.7" id="k0c-4A-49t"/>
                             <constraint firstItem="DUv-SS-mZ0" firstAttribute="height" secondItem="8EP-XA-oE4" secondAttribute="height" multiplier="1.3" id="ozQ-eh-HAn"/>
                             <constraint firstItem="mdq-Xt-k5r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sDq-ch-6cL"/>
-                            <constraint firstItem="8EP-XA-oE4" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="uY0-z1-btV"/>
+                            <constraint firstItem="8EP-XA-oE4" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.55" id="uY0-z1-btV"/>
                             <constraint firstItem="feu-2t-D0a" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="wdG-Tc-cr9"/>
                             <constraint firstItem="DUv-SS-mZ0" firstAttribute="width" secondItem="8EP-XA-oE4" secondAttribute="width" id="yDu-62-9la"/>
                         </constraints>
