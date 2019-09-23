@@ -73,6 +73,7 @@
 		A56893DE22FF0702009B5640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56893DC22FF0702009B5640 /* Main.storyboard */; };
 		A56893E022FF0704009B5640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56893DF22FF0704009B5640 /* Assets.xcassets */; };
 		A56893E322FF0704009B5640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56893E122FF0704009B5640 /* LaunchScreen.storyboard */; };
+		A5DFC348233770FF00033793 /* karikari.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5DFC347233770FF00033793 /* karikari.wav */; };
 		A5FDA2A223322A48008ED449 /* backing3.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5FDA29E23322A47008ED449 /* backing3.wav */; };
 		A5FDA2A323322A48008ED449 /* backing5.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5FDA29F23322A47008ED449 /* backing5.wav */; };
 		A5FDA2A423322A48008ED449 /* backing2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5FDA2A023322A48008ED449 /* backing2.wav */; };
@@ -164,6 +165,7 @@
 		A56893DF22FF0704009B5640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56893E222FF0704009B5640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A56893E422FF0704009B5640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DFC347233770FF00033793 /* karikari.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = karikari.wav; sourceTree = "<group>"; };
 		A5FDA29E23322A47008ED449 /* backing3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = backing3.wav; sourceTree = "<group>"; };
 		A5FDA29F23322A47008ED449 /* backing5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = backing5.wav; sourceTree = "<group>"; };
 		A5FDA2A023322A48008ED449 /* backing2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = backing2.wav; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				A53A4E862337653B004D6207 /* kirakira6.wav */,
 				A53A4E892337669D004D6207 /* kirakira7.wav */,
 				A53A4E8B2337674D004D6207 /* kirakira8.wav */,
+				A5DFC347233770FF00033793 /* karikari.wav */,
 				A5FDA2BD23322A87008ED449 /* mizu.wav */,
 				A5FDA2BB23322A86008ED449 /* rain.wav */,
 				A5FDA2B423322A7A008ED449 /* bass1.wav */,
@@ -461,6 +464,7 @@
 				A56893DE22FF0702009B5640 /* Main.storyboard in Resources */,
 				A505FCE1232E3790002B956C /* Glass.png in Resources */,
 				A505FCE3232E3790002B956C /* TopIce1.png in Resources */,
+				A5DFC348233770FF00033793 /* karikari.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

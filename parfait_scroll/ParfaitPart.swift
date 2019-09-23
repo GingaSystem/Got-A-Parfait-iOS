@@ -45,7 +45,7 @@ class ParfaitPart{
         ParfaitPart(.Topping, "Topping2","kirakira8.wav"),
         ParfaitPart(.Topping, "Topping3","kaze.wav"),
         ParfaitPart(.Topping, "Topping4","hail.wav"),
-        ParfaitPart(.Topping, "Topping5","mizu.wav"),
+        ParfaitPart(.Topping, "Topping5","karikari.wav"),
         ]
     
     static private let topIces = [
