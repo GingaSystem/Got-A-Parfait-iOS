@@ -39,6 +39,8 @@
 		960900762338E39200B74FDF /* さくらんぼ１.png in Resources */ = {isa = PBXBuildFile; fileRef = 960900752338E39200B74FDF /* さくらんぼ１.png */; };
 		96090078233921AB00B74FDF /* ParfaitAudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96090077233921AB00B74FDF /* ParfaitAudioEngine.swift */; };
 		96394847233946460089D95E /* CountIn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96394846233946460089D95E /* CountIn.mp3 */; };
+		96808DFA2339695000DAB5E5 /* Help.png in Resources */ = {isa = PBXBuildFile; fileRef = 96808DF92339695000DAB5E5 /* Help.png */; };
+		96808DFC23396C9200DAB5E5 /* ViewControllerHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96808DFB23396C9200DAB5E5 /* ViewControllerHelp.swift */; };
 		96930DCE2336262A0063110F /* ParfaitVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96930DCD2336262A0063110F /* ParfaitVideo.swift */; };
 		96930DD0233697750063110F /* ParfaitMix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96930DCF233697750063110F /* ParfaitMix.swift */; };
 		96FA27FD232F899B00E8181D /* se_maoudamashii_effect10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96FA27EE232F899B00E8181D /* se_maoudamashii_effect10.mp3 */; };
@@ -144,6 +146,8 @@
 		960900752338E39200B74FDF /* さくらんぼ１.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "さくらんぼ１.png"; sourceTree = "<group>"; };
 		96090077233921AB00B74FDF /* ParfaitAudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParfaitAudioEngine.swift; sourceTree = "<group>"; };
 		96394846233946460089D95E /* CountIn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CountIn.mp3; sourceTree = "<group>"; };
+		96808DF92339695000DAB5E5 /* Help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Help.png; sourceTree = "<group>"; };
+		96808DFB23396C9200DAB5E5 /* ViewControllerHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHelp.swift; sourceTree = "<group>"; };
 		96930DCD2336262A0063110F /* ParfaitVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParfaitVideo.swift; sourceTree = "<group>"; };
 		96930DCF233697750063110F /* ParfaitMix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParfaitMix.swift; sourceTree = "<group>"; };
 		96FA27EE232F899B00E8181D /* se_maoudamashii_effect10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_effect10.mp3; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 		960900322338E13500B74FDF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				96808DF92339695000DAB5E5 /* Help.png */,
 				A5D0834F233944FF00D3C6ED /* illust4605.png */,
 				960900332338E13500B74FDF /* 9_Misc */,
 				960900372338E13500B74FDF /* 2_TopIces */,
@@ -406,6 +411,7 @@
 				96FA280D232F89A500E8181D /* Tracks */,
 				A56893D822FF0702009B5640 /* AppDelegate.swift */,
 				A56893DA22FF0702009B5640 /* ViewController.swift */,
+				96808DFB23396C9200DAB5E5 /* ViewControllerHelp.swift */,
 				A505FCB3232E1676002B956C /* ParfaitPart.swift */,
 				96FA280E232FDECA00E8181D /* ParfaitAudio.swift */,
 				96090077233921AB00B74FDF /* ParfaitAudioEngine.swift */,
@@ -513,6 +519,7 @@
 				96FA2807232F899B00E8181D /* se_maoudamashii_effect07.mp3 in Resources */,
 				960900762338E39200B74FDF /* さくらんぼ１.png in Resources */,
 				A5FDA2A523322A48008ED449 /* backing4.wav in Resources */,
+				96808DFA2339695000DAB5E5 /* Help.png in Resources */,
 				A5FDA2AF23322A63008ED449 /* counter5.wav in Resources */,
 				960900632338E13500B74FDF /* 紫１.png in Resources */,
 				A5FDA2C223322A87008ED449 /* awa.wav in Resources */,
@@ -585,6 +592,7 @@
 				96930DD0233697750063110F /* ParfaitMix.swift in Sources */,
 				A56893DB22FF0702009B5640 /* ViewController.swift in Sources */,
 				A505FCB4232E1676002B956C /* ParfaitPart.swift in Sources */,
+				96808DFC23396C9200DAB5E5 /* ViewControllerHelp.swift in Sources */,
 				96090078233921AB00B74FDF /* ParfaitAudioEngine.swift in Sources */,
 				96FA280F232FDECB00E8181D /* ParfaitAudio.swift in Sources */,
 				96930DCE2336262A0063110F /* ParfaitVideo.swift in Sources */,
