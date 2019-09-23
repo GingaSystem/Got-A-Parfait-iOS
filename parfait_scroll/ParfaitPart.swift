@@ -62,8 +62,8 @@ class ParfaitPart{
         ParfaitPart(.Fruit, "レモン１.png", 1.0, "backing2.wav"),
         ParfaitPart(.Fruit, "オレンジ１.png", 1.0, "backing5.wav"),
         ParfaitPart(.Fruit, "メロン１.png", 1.0, "backing2.wav"),
-        ParfaitPart(.Fruit, "いちご１.png", 1.0, "backing3.wav"),
-        ParfaitPart(.Fruit, "ぶどう１.png", 1.0, "backing4.wav"),
+        ParfaitPart(.Fruit, "いちご１.png", 0.7, "backing3.wav"),
+        ParfaitPart(.Fruit, "ぶどう１.png", 0.8, "backing4.wav"),
     ]
     
     static private let bottomIceRatio: CGFloat = 0.47
