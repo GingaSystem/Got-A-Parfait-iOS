@@ -18,6 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHF-OC-8PQ">
+                                <rect key="frame" x="16" y="563" width="54" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="record" image="illust4605.png"/>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="パフェグラス１.png" translatesAutoresizingMaskIntoConstraints="NO" id="8EP-XA-oE4" userLabel="Glass">
                                 <rect key="frame" x="77.5" y="311" width="220" height="356"/>
                                 <constraints>
@@ -117,6 +122,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="illust4605.png" width="89.519996643066406" height="73"/>
         <image name="スプーン１.png" width="176.91429138183594" height="656.22857666015625"/>
         <image name="パフェグラス１.png" width="473.55429077148438" height="765.25714111328125"/>
     </resources>

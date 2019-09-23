@@ -76,6 +76,7 @@
 		A56893DE22FF0702009B5640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56893DC22FF0702009B5640 /* Main.storyboard */; };
 		A56893E022FF0704009B5640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56893DF22FF0704009B5640 /* Assets.xcassets */; };
 		A56893E322FF0704009B5640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56893E122FF0704009B5640 /* LaunchScreen.storyboard */; };
+		A5D08350233944FF00D3C6ED /* illust4605.png in Resources */ = {isa = PBXBuildFile; fileRef = A5D0834F233944FF00D3C6ED /* illust4605.png */; };
 		A5DC6DF4233900CD002D4B8C /* drum5.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5DC6DEF233900CC002D4B8C /* drum5.wav */; };
 		A5DC6DF5233900CD002D4B8C /* drum1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5DC6DF0233900CC002D4B8C /* drum1.wav */; };
 		A5DC6DF6233900CD002D4B8C /* drum3.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5DC6DF1233900CC002D4B8C /* drum3.wav */; };
@@ -180,6 +181,7 @@
 		A56893DF22FF0704009B5640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56893E222FF0704009B5640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A56893E422FF0704009B5640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5D0834F233944FF00D3C6ED /* illust4605.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = illust4605.png; sourceTree = "<group>"; };
 		A5DC6DEF233900CC002D4B8C /* drum5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum5.wav; sourceTree = "<group>"; };
 		A5DC6DF0233900CC002D4B8C /* drum1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum1.wav; sourceTree = "<group>"; };
 		A5DC6DF1233900CC002D4B8C /* drum3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum3.wav; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 		960900322338E13500B74FDF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A5D0834F233944FF00D3C6ED /* illust4605.png */,
 				960900332338E13500B74FDF /* 9_Misc */,
 				960900372338E13500B74FDF /* 2_TopIces */,
 				9609003E2338E13500B74FDF /* 4_BottomIces */,
@@ -487,6 +490,7 @@
 				A5FDA2A323322A48008ED449 /* backing5.wav in Resources */,
 				96FA2804232F899B00E8181D /* se_maoudamashii_effect01.mp3 in Resources */,
 				A5FDA2B523322A7A008ED449 /* bass4.wav in Resources */,
+				A5D08350233944FF00D3C6ED /* illust4605.png in Resources */,
 				96FA2809232F899B00E8181D /* se_maoudamashii_effect02.mp3 in Resources */,
 				96FA2805232F899B00E8181D /* se_maoudamashii_effect03.mp3 in Resources */,
 				A5FDA2A223322A48008ED449 /* backing3.wav in Resources */,
