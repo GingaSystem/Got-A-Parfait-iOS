@@ -9,7 +9,7 @@
 import AVFoundation
 import UIKit
 
-func getVideoURL() -> URL {
+private func getTemporaryVideoURL() -> URL {
     return NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("video.mp4")!
 }
 
@@ -33,7 +33,7 @@ class MovieCreator {
     func createFirst(image:UIImage, size:CGSize){
         
         //保存先のURL
-        url = getVideoURL()
+        url = getTemporaryVideoURL()
         // ファイルが存在している場合は削除
         if FileManager.default.fileExists(atPath: url!.path) {
             try! FileManager.default.removeItem(at: url!)
