@@ -253,11 +253,13 @@ class ViewController: UIViewController {
         } else if self.recordStatus.text == "Recording..." {
             // do nothing during recoridng
         } else {
-            recordVoice(parts: currentParts, callback: {
-                self.recordStatus.text = "Recorded"
-                self.recordButton.setTitle("🗑", for: .normal)
-            })
-            recordStatus.text = "Recording..."
+            if currentParts.count != 0 {
+                recordVoice(parts: currentParts, callback: {
+                    self.recordStatus.text = "Recorded"
+                    self.recordButton.setTitle("🗑", for: .normal)
+                })
+                recordStatus.text = "Recording..."
+            }
         }
     }
 }
