@@ -41,13 +41,14 @@ class ParfaitPart{
     static private let glass = UIImage(named: "パフェグラス１.png")!
     
     static private let toppings = [
-        ParfaitPart(.Topping, "棒クッキー１.png", 0.6, "awa.wav", offsetX: 80),
-        ParfaitPart(.Topping, "ミント１.png", 1.0, "hail.wav", offsetX: 40, offsetY: -200),
-        ParfaitPart(.Topping, "フレーク１.png", 0.8, "kaze.wav", offsetY: -120),
-        ParfaitPart(.Topping, "チョコスプレー１.png", 1.0, "mizu.wav", offsetY: -250),
-        ParfaitPart(.Topping, "さくらんぼ１.png", 0.6, "mizu.wav", offsetX: -10),
-        ParfaitPart(.Topping, "マカロン１.png", 1.1, "counter2.wav", offsetY: -30),
-        ParfaitPart(.Topping, "ハートクッキー１.png", 0.5, "kirakira8.wav"),
+        ParfaitPart(.Topping, "棒クッキー１.png", 0.6, "awa.wav", offsetX: 100),
+        ParfaitPart(.Topping, "ハートクッキー１.png", 0.5, "kirakira8.wav", offsetX: -120, offsetY: -700),
+        ParfaitPart(.Topping, "ミント１.png", 1.0, "hail.wav", offsetX: 80, offsetY: -600),
+        ParfaitPart(.Topping, "マカロン１.png", 0.6, "counter2.wav", offsetX: -120, offsetY: -700),
+        ParfaitPart(.Topping, "さくらんぼ１.png", 0.6, "mizu.wav", offsetX: 80, offsetY: -300),
+        ParfaitPart(.Topping, "チョコスプレー１.png", 0.9, "mizu.wav",offsetX: -20, offsetY: -400),
+        ParfaitPart(.Topping, "フレーク１.png", 0.4, "kaze.wav", offsetX: -100, offsetY: -500),
+        
     ]
     
     static private let topIces = [
