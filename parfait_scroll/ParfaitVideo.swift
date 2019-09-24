@@ -10,7 +10,7 @@ import AVFoundation
 import UIKit
 
 private func getTemporaryVideoURL() -> URL {
-    return NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("video.mp4")!
+    return NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("video2.mp4")!
 }
 
 class MovieCreator {

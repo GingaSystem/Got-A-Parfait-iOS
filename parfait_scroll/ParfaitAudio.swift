@@ -78,7 +78,7 @@ private func preparePreview(parts: Dictionary<ParfaitPart.Kind, ParfaitPart>, lo
  * Audio Rendering
  */
 private func getTemporaryAudioURL() -> URL {
-    return NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("audio.wav")!
+    return NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("audio2.wav")!
 }
 
 func renderTrack(parts: Dictionary<ParfaitPart.Kind, ParfaitPart>) -> (URL, Int64) {
@@ -102,7 +102,7 @@ private func getCountInTrackURL() -> URL {
 }
 
 private func getTemporaryRecordingURL() -> URL {
-    return NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("voice.mp4")!
+    return NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("voice2.mp4")!
 }
 
 func recordVoice(parts: Dictionary<ParfaitPart.Kind, ParfaitPart>, callback: @escaping () -> Void) {

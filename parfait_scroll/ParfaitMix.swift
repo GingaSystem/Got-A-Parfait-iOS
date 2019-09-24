@@ -11,7 +11,7 @@ import AVFoundation
 private var _assetExport: AVAssetExportSession!
 
 func getMixedVideoURL() -> URL {
-    return NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("mixed.mp4")!
+    return NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("mixed2.mp4")!
 }
 
 func renderMixed(_ audioURL: URL, _ videoURL: URL, _ callback: @escaping (AVAssetExportSession) -> Void) {
