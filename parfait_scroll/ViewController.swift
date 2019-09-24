@@ -214,18 +214,20 @@ class ViewController: UIViewController {
     }
     
     func drawGlassAndContents(contentSize: CGSize, glassSize: CGSize) -> UIImage {
-        let entireRegionRect = CGRect(x: 0, y: 0, width: contentSize.width, height: contentSize.height)
-        let glassRegionRect = CGRect(x: 0, y: contentSize.height - glassSize.height, width: glassSize.width, height: glassSize.height)
+        let marginX: CGFloat = 100.0  // 動画化したときの余白
+        let marginY: CGFloat = 80.0  // 動画化したときの余白
         
-        UIGraphicsBeginImageContextWithOptions(contentSize, false, 0)
+        let entireRegionRect = CGRect(x: 0, y: 0, width: contentSize.width + marginX * 2.0, height: contentSize.height + marginY * 2.0)
+        let glassContentRegionRect = CGRect(x: marginX, y: marginY, width: contentSize.width, height: contentSize.height)
+        let glassRegionRect = CGRect(x: marginX, y: marginY + contentSize.height - glassSize.height, width: glassSize.width, height: glassSize.height)
+        
+        UIGraphicsBeginImageContextWithOptions(entireRegionRect.size, false, 0)
         let ctx = UIGraphicsGetCurrentContext()!
-        ctx.setFillColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)
+        ctx.setFillColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)  // 動画の背景色
         UIRectFill(entireRegionRect)
         self.glass.image!.draw(in: glassRegionRect)
         drawGlassContents(
-            contentSize: contentSize,
-            glassSize: glassSize).draw(
-                in: CGRect(x: 0, y: 0, width: contentSize.width, height: contentSize.height))
+            contentSize: contentSize,glassSize: glassSize).draw(in: glassContentRegionRect)
          let img = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         return img
