@@ -42,12 +42,12 @@ class ParfaitPart{
     
     static private let toppings = [
         ParfaitPart(.Topping, "棒クッキー１.png", 0.6, "awa.wav", offsetX: 100),
-        ParfaitPart(.Topping, "ハートクッキー１.png", 0.5, "kirakira8.wav", offsetX: -120, offsetY: -700),
+        ParfaitPart(.Topping, "ハートクッキー１.png", 0.5, "sakusaku3.wav", offsetX: -120, offsetY: -700),
         ParfaitPart(.Topping, "ミント１.png", 1.0, "hail.wav", offsetX: 80, offsetY: -600),
-        ParfaitPart(.Topping, "マカロン１.png", 0.6, "counter2.wav", offsetX: -120, offsetY: -700),
+        ParfaitPart(.Topping, "マカロン１.png", 0.6, "kirakira8.wav", offsetX: -120, offsetY: -700),
         ParfaitPart(.Topping, "さくらんぼ１.png", 0.6, "mizu.wav", offsetX: 80, offsetY: -300),
         ParfaitPart(.Topping, "チョコスプレー１.png", 0.9, "mizu.wav",offsetX: -20, offsetY: -800),
-        ParfaitPart(.Topping, "フレーク１.png", 0.4, "kaze.wav", offsetX: -100, offsetY: -500),
+        ParfaitPart(.Topping, "フレーク１.png", 0.4, "sakusaku3.wav", offsetX: -100, offsetY: -500),
         
     ]
     

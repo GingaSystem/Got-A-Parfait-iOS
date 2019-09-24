@@ -69,18 +69,13 @@
 		A52D0BE12335254700739EA4 /* bass1_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A52D0BDD2335254700739EA4 /* bass1_1.wav */; };
 		A52D0BE22335254700739EA4 /* bass3_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A52D0BDE2335254700739EA4 /* bass3_1.wav */; };
 		A52D0BE32335254700739EA4 /* bass2_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A52D0BDF2335254700739EA4 /* bass2_1.wav */; };
-		A53A4E85233763A4004D6207 /* kirakira4.wav in Resources */ = {isa = PBXBuildFile; fileRef = A53A4E84233763A4004D6207 /* kirakira4.wav */; };
-		A53A4E872337653B004D6207 /* kirakira6.wav in Resources */ = {isa = PBXBuildFile; fileRef = A53A4E862337653B004D6207 /* kirakira6.wav */; };
-		A53A4E8A2337669D004D6207 /* kirakira7.wav in Resources */ = {isa = PBXBuildFile; fileRef = A53A4E892337669D004D6207 /* kirakira7.wav */; };
 		A53A4E8C2337674D004D6207 /* kirakira8.wav in Resources */ = {isa = PBXBuildFile; fileRef = A53A4E8B2337674D004D6207 /* kirakira8.wav */; };
-		A562F0C923375D4300519F5B /* kirakira2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A562F0C823375D4300519F5B /* kirakira2.mp3 */; };
-		A562F0CB23375DEA00519F5B /* kirakira2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A562F0CA23375DEA00519F5B /* kirakira2.wav */; };
+		A542DCA72339BC8C00D8FBA3 /* sakusaku3.wav in Resources */ = {isa = PBXBuildFile; fileRef = A542DCA62339BC8B00D8FBA3 /* sakusaku3.wav */; };
 		A56893D922FF0702009B5640 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56893D822FF0702009B5640 /* AppDelegate.swift */; };
 		A56893DB22FF0702009B5640 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56893DA22FF0702009B5640 /* ViewController.swift */; };
 		A56893DE22FF0702009B5640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56893DC22FF0702009B5640 /* Main.storyboard */; };
 		A56893E022FF0704009B5640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56893DF22FF0704009B5640 /* Assets.xcassets */; };
 		A56893E322FF0704009B5640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56893E122FF0704009B5640 /* LaunchScreen.storyboard */; };
-		A5D08350233944FF00D3C6ED /* illust4605.png in Resources */ = {isa = PBXBuildFile; fileRef = A5D0834F233944FF00D3C6ED /* illust4605.png */; };
 		A5DC6DF4233900CD002D4B8C /* drum5.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5DC6DEF233900CC002D4B8C /* drum5.wav */; };
 		A5DC6DF5233900CD002D4B8C /* drum1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5DC6DF0233900CC002D4B8C /* drum1.wav */; };
 		A5DC6DF6233900CD002D4B8C /* drum3.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5DC6DF1233900CC002D4B8C /* drum3.wav */; };
@@ -105,7 +100,6 @@
 		A5FDA2B723322A7A008ED449 /* bass3.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5FDA2B223322A79008ED449 /* bass3.wav */; };
 		A5FDA2B823322A7A008ED449 /* bass2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5FDA2B323322A79008ED449 /* bass2.wav */; };
 		A5FDA2B923322A7A008ED449 /* bass1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5FDA2B423322A7A008ED449 /* bass1.wav */; };
-		A5FDA2C023322A87008ED449 /* kirakira.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5FDA2BA23322A86008ED449 /* kirakira.wav */; };
 		A5FDA2C123322A87008ED449 /* rain.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5FDA2BB23322A86008ED449 /* rain.wav */; };
 		A5FDA2C223322A87008ED449 /* awa.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5FDA2BC23322A86008ED449 /* awa.wav */; };
 		A5FDA2C323322A87008ED449 /* mizu.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5FDA2BD23322A87008ED449 /* mizu.wav */; };
@@ -176,12 +170,8 @@
 		A52D0BDD2335254700739EA4 /* bass1_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass1_1.wav; sourceTree = "<group>"; };
 		A52D0BDE2335254700739EA4 /* bass3_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass3_1.wav; sourceTree = "<group>"; };
 		A52D0BDF2335254700739EA4 /* bass2_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass2_1.wav; sourceTree = "<group>"; };
-		A53A4E84233763A4004D6207 /* kirakira4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kirakira4.wav; sourceTree = "<group>"; };
-		A53A4E862337653B004D6207 /* kirakira6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kirakira6.wav; sourceTree = "<group>"; };
-		A53A4E892337669D004D6207 /* kirakira7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kirakira7.wav; sourceTree = "<group>"; };
 		A53A4E8B2337674D004D6207 /* kirakira8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kirakira8.wav; sourceTree = "<group>"; };
-		A562F0C823375D4300519F5B /* kirakira2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kirakira2.mp3; sourceTree = "<group>"; };
-		A562F0CA23375DEA00519F5B /* kirakira2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kirakira2.wav; sourceTree = "<group>"; };
+		A542DCA62339BC8B00D8FBA3 /* sakusaku3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sakusaku3.wav; sourceTree = "<group>"; };
 		A56893D522FF0702009B5640 /* parfait_scroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parfait_scroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56893D822FF0702009B5640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A56893DA22FF0702009B5640 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -189,7 +179,6 @@
 		A56893DF22FF0704009B5640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56893E222FF0704009B5640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A56893E422FF0704009B5640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5D0834F233944FF00D3C6ED /* illust4605.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = illust4605.png; sourceTree = "<group>"; };
 		A5DC6DEF233900CC002D4B8C /* drum5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum5.wav; sourceTree = "<group>"; };
 		A5DC6DF0233900CC002D4B8C /* drum1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum1.wav; sourceTree = "<group>"; };
 		A5DC6DF1233900CC002D4B8C /* drum3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum3.wav; sourceTree = "<group>"; };
@@ -214,7 +203,6 @@
 		A5FDA2B223322A79008ED449 /* bass3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass3.wav; sourceTree = "<group>"; };
 		A5FDA2B323322A79008ED449 /* bass2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass2.wav; sourceTree = "<group>"; };
 		A5FDA2B423322A7A008ED449 /* bass1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass1.wav; sourceTree = "<group>"; };
-		A5FDA2BA23322A86008ED449 /* kirakira.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kirakira.wav; sourceTree = "<group>"; };
 		A5FDA2BB23322A86008ED449 /* rain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rain.wav; sourceTree = "<group>"; };
 		A5FDA2BC23322A86008ED449 /* awa.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = awa.wav; sourceTree = "<group>"; };
 		A5FDA2BD23322A87008ED449 /* mizu.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mizu.wav; sourceTree = "<group>"; };
@@ -237,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				96808DF92339695000DAB5E5 /* Help.png */,
-				A5D0834F233944FF00D3C6ED /* illust4605.png */,
 				960900332338E13500B74FDF /* 9_Misc */,
 				960900372338E13500B74FDF /* 2_TopIces */,
 				9609003E2338E13500B74FDF /* 4_BottomIces */,
@@ -323,6 +310,7 @@
 		96FA280D232F89A500E8181D /* Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				A542DCA62339BC8B00D8FBA3 /* sakusaku3.wav */,
 				96394846233946460089D95E /* CountIn.mp3 */,
 				A5DC6DF0233900CC002D4B8C /* drum1.wav */,
 				A5DC6DF2233900CC002D4B8C /* drum2.wav */,
@@ -336,12 +324,6 @@
 				A5FDA2BC23322A86008ED449 /* awa.wav */,
 				A5FDA2BF23322A87008ED449 /* hail.wav */,
 				A5FDA2BE23322A87008ED449 /* kaze.wav */,
-				A5FDA2BA23322A86008ED449 /* kirakira.wav */,
-				A562F0CA23375DEA00519F5B /* kirakira2.wav */,
-				A562F0C823375D4300519F5B /* kirakira2.mp3 */,
-				A53A4E84233763A4004D6207 /* kirakira4.wav */,
-				A53A4E862337653B004D6207 /* kirakira6.wav */,
-				A53A4E892337669D004D6207 /* kirakira7.wav */,
 				A53A4E8B2337674D004D6207 /* kirakira8.wav */,
 				A5DFC347233770FF00033793 /* karikari.wav */,
 				A5FDA2BD23322A87008ED449 /* mizu.wav */,
@@ -502,7 +484,6 @@
 				A5FDA2A323322A48008ED449 /* backing5.wav in Resources */,
 				96FA2804232F899B00E8181D /* se_maoudamashii_effect01.mp3 in Resources */,
 				A5FDA2B523322A7A008ED449 /* bass4.wav in Resources */,
-				A5D08350233944FF00D3C6ED /* illust4605.png in Resources */,
 				96FA2809232F899B00E8181D /* se_maoudamashii_effect02.mp3 in Resources */,
 				96FA2805232F899B00E8181D /* se_maoudamashii_effect03.mp3 in Resources */,
 				A5FDA2A223322A48008ED449 /* backing3.wav in Resources */,
@@ -527,14 +508,12 @@
 				96FA2803232F899B00E8181D /* se_maoudamashii_effect09.mp3 in Resources */,
 				A5DC6DF5233900CD002D4B8C /* drum1.wav in Resources */,
 				96FA27FF232F899B00E8181D /* se_maoudamashii_effect12.mp3 in Resources */,
-				A53A4E8A2337669D004D6207 /* kirakira7.wav in Resources */,
 				A56893E022FF0704009B5640 /* Assets.xcassets in Resources */,
 				96FA280A232F899B00E8181D /* se_maoudamashii_effect11.mp3 in Resources */,
 				960900702338E13500B74FDF /* 緑系１.png in Resources */,
 				A5FDA2B623322A7A008ED449 /* bass5.wav in Resources */,
 				960900722338E13500B74FDF /* 紫系１.png in Resources */,
 				9609006E2338E13500B74FDF /* オレンジ１.png in Resources */,
-				A562F0CB23375DEA00519F5B /* kirakira2.wav in Resources */,
 				A5DC6E0023390185002D4B8C /* bass13.wav in Resources */,
 				960900592338E13500B74FDF /* パフェグラス１.png in Resources */,
 				A5FDA2C123322A87008ED449 /* rain.wav in Resources */,
@@ -545,13 +524,12 @@
 				A5FDA2C423322A87008ED449 /* kaze.wav in Resources */,
 				A5DC6DF4233900CD002D4B8C /* drum5.wav in Resources */,
 				960900582338E13500B74FDF /* スプーン１.png in Resources */,
-				A53A4E85233763A4004D6207 /* kirakira4.wav in Resources */,
 				9609006F2338E13500B74FDF /* レモン１.png in Resources */,
 				A52D0BE02335254700739EA4 /* bass4_1.wav in Resources */,
-				A53A4E872337653B004D6207 /* kirakira6.wav in Resources */,
 				96FA2800232F899B00E8181D /* se_maoudamashii_effect15.mp3 in Resources */,
 				960900612338E13500B74FDF /* 赤系１.png in Resources */,
 				A52D0BDA2335252E00739EA4 /* drum5_1.wav in Resources */,
+				A542DCA72339BC8C00D8FBA3 /* sakusaku3.wav in Resources */,
 				A5FDA2B923322A7A008ED449 /* bass1.wav in Resources */,
 				960900572338E13500B74FDF /* パフェアイコン.png in Resources */,
 				9609005C2338E13500B74FDF /* レモンアイス１.png in Resources */,
@@ -565,8 +543,6 @@
 				960900692338E13500B74FDF /* フレーク１.png in Resources */,
 				960900652338E13500B74FDF /* ハートクッキー１.png in Resources */,
 				9609005A2338E13500B74FDF /* プリン１.png in Resources */,
-				A562F0C923375D4300519F5B /* kirakira2.mp3 in Resources */,
-				A5FDA2C023322A87008ED449 /* kirakira.wav in Resources */,
 				A52D0BD82335252E00739EA4 /* drum4_1.wav in Resources */,
 				A52D0BDB2335252E00739EA4 /* drum2_1.wav in Resources */,
 				A5FDA2AE23322A63008ED449 /* counter3.wav in Resources */,
