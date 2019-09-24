@@ -71,18 +71,20 @@
 		A52D0BE32335254700739EA4 /* bass2_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A52D0BDF2335254700739EA4 /* bass2_1.wav */; };
 		A53A4E8C2337674D004D6207 /* kirakira8.wav in Resources */ = {isa = PBXBuildFile; fileRef = A53A4E8B2337674D004D6207 /* kirakira8.wav */; };
 		A542DCA72339BC8C00D8FBA3 /* sakusaku3.wav in Resources */ = {isa = PBXBuildFile; fileRef = A542DCA62339BC8B00D8FBA3 /* sakusaku3.wav */; };
-		A542DCA92339C37200D8FBA3 /* triangle.wav in Resources */ = {isa = PBXBuildFile; fileRef = A542DCA82339C37200D8FBA3 /* triangle.wav */; };
 		A56893D922FF0702009B5640 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56893D822FF0702009B5640 /* AppDelegate.swift */; };
 		A56893DB22FF0702009B5640 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56893DA22FF0702009B5640 /* ViewController.swift */; };
 		A56893DE22FF0702009B5640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56893DC22FF0702009B5640 /* Main.storyboard */; };
 		A56893E022FF0704009B5640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56893DF22FF0704009B5640 /* Assets.xcassets */; };
 		A56893E322FF0704009B5640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56893E122FF0704009B5640 /* LaunchScreen.storyboard */; };
-		A5A3564F2339C61D0082AF5A /* clave1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5A3564E2339C61D0082AF5A /* clave1.wav */; };
 		A5D9CCEF2339EB7800ACDCE8 /* sakuranbo3.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5D9CCEE2339EB7700ACDCE8 /* sakuranbo3.wav */; };
 		A5D9CCF52339EE3E00ACDCE8 /* mint3.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5D9CCF42339EE3E00ACDCE8 /* mint3.wav */; };
 		A5D9CCF82339F04200ACDCE8 /* mint4.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5D9CCF72339F04200ACDCE8 /* mint4.wav */; };
 		A5D9CCFB2339F57400ACDCE8 /* backing6.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5D9CCF92339F57400ACDCE8 /* backing6.wav */; };
 		A5D9CCFC2339F57400ACDCE8 /* backing7.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5D9CCFA2339F57400ACDCE8 /* backing7.wav */; };
+		A5D9CD002339F9D300ACDCE8 /* clave4.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5D9CCFF2339F9D300ACDCE8 /* clave4.wav */; };
+		A5D9CD022339FAAE00ACDCE8 /* triangle3.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5D9CD012339FAAE00ACDCE8 /* triangle3.wav */; };
+		A5D9CD042339FBA300ACDCE8 /* sakuranbo4.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5D9CD032339FBA300ACDCE8 /* sakuranbo4.wav */; };
+		A5D9CD062339FF8C00ACDCE8 /* cookie.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5D9CD052339FF8C00ACDCE8 /* cookie.wav */; };
 		A5DC6DF4233900CD002D4B8C /* drum5.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5DC6DEF233900CC002D4B8C /* drum5.wav */; };
 		A5DC6DF5233900CD002D4B8C /* drum1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5DC6DF0233900CC002D4B8C /* drum1.wav */; };
 		A5DC6DF6233900CD002D4B8C /* drum3.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5DC6DF1233900CC002D4B8C /* drum3.wav */; };
@@ -178,7 +180,6 @@
 		A52D0BDF2335254700739EA4 /* bass2_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass2_1.wav; sourceTree = "<group>"; };
 		A53A4E8B2337674D004D6207 /* kirakira8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kirakira8.wav; sourceTree = "<group>"; };
 		A542DCA62339BC8B00D8FBA3 /* sakusaku3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sakusaku3.wav; sourceTree = "<group>"; };
-		A542DCA82339C37200D8FBA3 /* triangle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = triangle.wav; sourceTree = "<group>"; };
 		A56893D522FF0702009B5640 /* parfait_scroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parfait_scroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56893D822FF0702009B5640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A56893DA22FF0702009B5640 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -186,12 +187,15 @@
 		A56893DF22FF0704009B5640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56893E222FF0704009B5640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A56893E422FF0704009B5640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5A3564E2339C61D0082AF5A /* clave1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clave1.wav; sourceTree = "<group>"; };
 		A5D9CCEE2339EB7700ACDCE8 /* sakuranbo3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sakuranbo3.wav; sourceTree = "<group>"; };
 		A5D9CCF42339EE3E00ACDCE8 /* mint3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mint3.wav; sourceTree = "<group>"; };
 		A5D9CCF72339F04200ACDCE8 /* mint4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mint4.wav; sourceTree = "<group>"; };
 		A5D9CCF92339F57400ACDCE8 /* backing6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = backing6.wav; path = "parfaitAudio/backing/バッキング１/backing6.wav"; sourceTree = "<group>"; };
 		A5D9CCFA2339F57400ACDCE8 /* backing7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = backing7.wav; path = "parfaitAudio/backing/バッキング１/backing7.wav"; sourceTree = "<group>"; };
+		A5D9CCFF2339F9D300ACDCE8 /* clave4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clave4.wav; sourceTree = "<group>"; };
+		A5D9CD012339FAAE00ACDCE8 /* triangle3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = triangle3.wav; sourceTree = "<group>"; };
+		A5D9CD032339FBA300ACDCE8 /* sakuranbo4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sakuranbo4.wav; sourceTree = "<group>"; };
+		A5D9CD052339FF8C00ACDCE8 /* cookie.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cookie.wav; sourceTree = "<group>"; };
 		A5DC6DEF233900CC002D4B8C /* drum5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum5.wav; sourceTree = "<group>"; };
 		A5DC6DF0233900CC002D4B8C /* drum1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum1.wav; sourceTree = "<group>"; };
 		A5DC6DF1233900CC002D4B8C /* drum3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drum3.wav; sourceTree = "<group>"; };
@@ -322,9 +326,11 @@
 		96FA280D232F89A500E8181D /* Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				A5D9CD052339FF8C00ACDCE8 /* cookie.wav */,
 				A5D9CCF72339F04200ACDCE8 /* mint4.wav */,
 				A5D9CCF42339EE3E00ACDCE8 /* mint3.wav */,
 				A5D9CCEE2339EB7700ACDCE8 /* sakuranbo3.wav */,
+				A5D9CD032339FBA300ACDCE8 /* sakuranbo4.wav */,
 				A542DCA62339BC8B00D8FBA3 /* sakusaku3.wav */,
 				96394846233946460089D95E /* CountIn.mp3 */,
 				A5DC6DF0233900CC002D4B8C /* drum1.wav */,
@@ -367,8 +373,8 @@
 				A52D0BD22335252D00739EA4 /* drum3_1.wav */,
 				A52D0BD32335252D00739EA4 /* drum4_1.wav */,
 				A52D0BD52335252E00739EA4 /* drum5_1.wav */,
-				A542DCA82339C37200D8FBA3 /* triangle.wav */,
-				A5A3564E2339C61D0082AF5A /* clave1.wav */,
+				A5D9CD012339FAAE00ACDCE8 /* triangle3.wav */,
+				A5D9CCFF2339F9D300ACDCE8 /* clave4.wav */,
 				96FA27F5232F899B00E8181D /* se_maoudamashii_effect01.mp3 */,
 				96FA27FA232F899B00E8181D /* se_maoudamashii_effect02.mp3 */,
 				96FA27F6232F899B00E8181D /* se_maoudamashii_effect03.mp3 */,
@@ -516,7 +522,6 @@
 				A52D0BD92335252E00739EA4 /* drum1_1.wav in Resources */,
 				A5FDA2AD23322A63008ED449 /* counter4.wav in Resources */,
 				A5FDA2B723322A7A008ED449 /* bass3.wav in Resources */,
-				A5A3564F2339C61D0082AF5A /* clave1.wav in Resources */,
 				96FA280B232F899B00E8181D /* se_maoudamashii_effect08.mp3 in Resources */,
 				96FA27FD232F899B00E8181D /* se_maoudamashii_effect10.mp3 in Resources */,
 				96FA2807232F899B00E8181D /* se_maoudamashii_effect07.mp3 in Resources */,
@@ -541,12 +546,14 @@
 				A5FDA2C123322A87008ED449 /* rain.wav in Resources */,
 				A5DC6DFF23390185002D4B8C /* bass14.wav in Resources */,
 				9609006C2338E13500B74FDF /* ぶどう１.png in Resources */,
+				A5D9CD002339F9D300ACDCE8 /* clave4.wav in Resources */,
 				A5DC6DF8233900CD002D4B8C /* drum4.wav in Resources */,
 				960900642338E13500B74FDF /* オレンジ系１.png in Resources */,
 				A5FDA2C423322A87008ED449 /* kaze.wav in Resources */,
 				A5DC6DF4233900CD002D4B8C /* drum5.wav in Resources */,
 				960900582338E13500B74FDF /* スプーン１.png in Resources */,
 				9609006F2338E13500B74FDF /* レモン１.png in Resources */,
+				A5D9CD022339FAAE00ACDCE8 /* triangle3.wav in Resources */,
 				A5D9CCEF2339EB7800ACDCE8 /* sakuranbo3.wav in Resources */,
 				A52D0BE02335254700739EA4 /* bass4_1.wav in Resources */,
 				96FA2800232F899B00E8181D /* se_maoudamashii_effect15.mp3 in Resources */,
@@ -562,11 +569,11 @@
 				A5DC6DF6233900CD002D4B8C /* drum3.wav in Resources */,
 				960900662338E13500B74FDF /* チョコスプレー１.png in Resources */,
 				A52D0BE32335254700739EA4 /* bass2_1.wav in Resources */,
-				A542DCA92339C37200D8FBA3 /* triangle.wav in Resources */,
 				9609005E2338E13500B74FDF /* ベリーアイス１.png in Resources */,
 				A5DC6DFD23390185002D4B8C /* bass11.wav in Resources */,
 				960900692338E13500B74FDF /* フレーク１.png in Resources */,
 				960900652338E13500B74FDF /* ハートクッキー１.png in Resources */,
+				A5D9CD062339FF8C00ACDCE8 /* cookie.wav in Resources */,
 				9609005A2338E13500B74FDF /* プリン１.png in Resources */,
 				A52D0BD82335252E00739EA4 /* drum4_1.wav in Resources */,
 				A52D0BDB2335252E00739EA4 /* drum2_1.wav in Resources */,
@@ -578,6 +585,7 @@
 				A52D0BE12335254700739EA4 /* bass1_1.wav in Resources */,
 				A5FDA2C523322A87008ED449 /* hail.wav in Resources */,
 				9609005D2338E13500B74FDF /* マカロン１.png in Resources */,
+				A5D9CD042339FBA300ACDCE8 /* sakuranbo4.wav in Resources */,
 				A56893DE22FF0702009B5640 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
