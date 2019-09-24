@@ -71,6 +71,7 @@
 		A52D0BE32335254700739EA4 /* bass2_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A52D0BDF2335254700739EA4 /* bass2_1.wav */; };
 		A53A4E8C2337674D004D6207 /* kirakira8.wav in Resources */ = {isa = PBXBuildFile; fileRef = A53A4E8B2337674D004D6207 /* kirakira8.wav */; };
 		A542DCA72339BC8C00D8FBA3 /* sakusaku3.wav in Resources */ = {isa = PBXBuildFile; fileRef = A542DCA62339BC8B00D8FBA3 /* sakusaku3.wav */; };
+		A542DCA92339C37200D8FBA3 /* triangle.wav in Resources */ = {isa = PBXBuildFile; fileRef = A542DCA82339C37200D8FBA3 /* triangle.wav */; };
 		A56893D922FF0702009B5640 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56893D822FF0702009B5640 /* AppDelegate.swift */; };
 		A56893DB22FF0702009B5640 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56893DA22FF0702009B5640 /* ViewController.swift */; };
 		A56893DE22FF0702009B5640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56893DC22FF0702009B5640 /* Main.storyboard */; };
@@ -172,6 +173,7 @@
 		A52D0BDF2335254700739EA4 /* bass2_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass2_1.wav; sourceTree = "<group>"; };
 		A53A4E8B2337674D004D6207 /* kirakira8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kirakira8.wav; sourceTree = "<group>"; };
 		A542DCA62339BC8B00D8FBA3 /* sakusaku3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sakusaku3.wav; sourceTree = "<group>"; };
+		A542DCA82339C37200D8FBA3 /* triangle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = triangle.wav; sourceTree = "<group>"; };
 		A56893D522FF0702009B5640 /* parfait_scroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parfait_scroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56893D822FF0702009B5640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A56893DA22FF0702009B5640 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 				A52D0BD22335252D00739EA4 /* drum3_1.wav */,
 				A52D0BD32335252D00739EA4 /* drum4_1.wav */,
 				A52D0BD52335252E00739EA4 /* drum5_1.wav */,
+				A542DCA82339C37200D8FBA3 /* triangle.wav */,
 				96FA27F5232F899B00E8181D /* se_maoudamashii_effect01.mp3 */,
 				96FA27FA232F899B00E8181D /* se_maoudamashii_effect02.mp3 */,
 				96FA27F6232F899B00E8181D /* se_maoudamashii_effect03.mp3 */,
@@ -538,6 +541,7 @@
 				A5DC6DF6233900CD002D4B8C /* drum3.wav in Resources */,
 				960900662338E13500B74FDF /* チョコスプレー１.png in Resources */,
 				A52D0BE32335254700739EA4 /* bass2_1.wav in Resources */,
+				A542DCA92339C37200D8FBA3 /* triangle.wav in Resources */,
 				9609005E2338E13500B74FDF /* ベリーアイス１.png in Resources */,
 				A5DC6DFD23390185002D4B8C /* bass11.wav in Resources */,
 				960900692338E13500B74FDF /* フレーク１.png in Resources */,
