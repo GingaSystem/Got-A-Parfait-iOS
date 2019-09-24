@@ -43,45 +43,45 @@ class ParfaitPart{
     static private let toppings = [
         ParfaitPart(.Topping, "棒クッキー１.png", 0.6, "clave1.wav", offsetX: 100),
         ParfaitPart(.Topping, "ハートクッキー１.png", 0.5, "sakusaku3.wav", offsetX: -120, offsetY: -700),
-        ParfaitPart(.Topping, "ミント１.png", 1.0, "se_maoudamashii_effect03.mp3", offsetX: 80, offsetY: -600),
+        ParfaitPart(.Topping, "ミント１.png", 1.0, "mint4.wav", offsetX: 80, offsetY: -600),
         ParfaitPart(.Topping, "マカロン１.png", 0.6, "kirakira8.wav", offsetX: -120, offsetY: -700),
-        ParfaitPart(.Topping, "さくらんぼ１.png", 0.6, "sakuranbo.wav", offsetX: 80, offsetY: -300),
+        ParfaitPart(.Topping, "さくらんぼ１.png", 0.6, "sakuranbo3.wav", offsetX: 80, offsetY: -300),
         ParfaitPart(.Topping, "チョコスプレー１.png", 0.9, "triangle.wav",offsetX: -20, offsetY: -800),
         ParfaitPart(.Topping, "フレーク１.png", 0.4, "hail.wav", offsetX: -100, offsetY: -500),
         
     ]
     
     static private let topIces = [
-        ParfaitPart(.TopIce, "バニラアイス１.png", 1.0, "counter5.wav"),
-        ParfaitPart(.TopIce, "チョコアイス１.png", 1.0, "counter1.wav", offsetY: -20),
-        ParfaitPart(.TopIce, "ベリーアイス１.png", 0.8, "counter5.wav", offsetY: 100),
-        ParfaitPart(.TopIce, "プリン１.png", 1.0, "counter3.wav", offsetY: -100),
-        ParfaitPart(.TopIce, "レモンアイス１.png", 1.0, "counter4.wav"),
+        ParfaitPart(.TopIce, "バニラアイス１.png", 1.0, "counter1.wav"),
+        ParfaitPart(.TopIce, "チョコアイス１.png", 1.0, "counter4.wav", offsetY: -20),
+        ParfaitPart(.TopIce, "ベリーアイス１.png", 0.8, "counter3.wav", offsetY: 100),
+        ParfaitPart(.TopIce, "プリン１.png", 1.0, "counter2.wav", offsetY: -100),
+        ParfaitPart(.TopIce, "レモンアイス１.png", 1.0, "counter5.wav"),
     ]
     
     static private let fruits =  [
-        ParfaitPart(.Fruit, "レモン１.png", 1.0, "backing2.wav"),
-        ParfaitPart(.Fruit, "オレンジ１.png", 1.0, "backing5.wav", offsetY: 200),
-        ParfaitPart(.Fruit, "メロン１.png", 0.95, "backing2.wav", offsetY: 200),
-        ParfaitPart(.Fruit, "いちご１.png", 0.8, "backing3.wav"),
-        ParfaitPart(.Fruit, "ぶどう１.png", 0.9, "backing4.wav"),
+        ParfaitPart(.Fruit, "レモン１.png", 1.0, "backing5.wav"),
+        ParfaitPart(.Fruit, "オレンジ１.png", 1.0, "backing2.wav", offsetY: 200),
+        ParfaitPart(.Fruit, "メロン１.png", 0.95, "backing6.wav", offsetY: 200),
+        ParfaitPart(.Fruit, "いちご１.png", 0.8, "backing4.wav"),
+        ParfaitPart(.Fruit, "ぶどう１.png", 0.9, "backing7.wav"),
     ]
     
     static private let bottomIceRatio: CGFloat = 0.47
     static private let bottomIces = [
         ParfaitPart(.BottomIce, "赤系１.png", bottomIceRatio, "bass11.wav"),
         ParfaitPart(.BottomIce, "オレンジ系１.png", bottomIceRatio, "bass12.wav"),
-        ParfaitPart(.BottomIce, "マカロン系１.png", bottomIceRatio, "bass13.wav"),
+        ParfaitPart(.BottomIce, "マカロン系１.png", bottomIceRatio, "bass1.wav"),
         ParfaitPart(.BottomIce, "ホッピングシャワー系１.png", bottomIceRatio, "bass14.wav"),
-        ParfaitPart(.BottomIce, "紫１.png", bottomIceRatio, "bass1.wav"),
+        ParfaitPart(.BottomIce, "紫１.png", bottomIceRatio, "bass13.wav"),
     ]
     
     static private let syrupRatio: CGFloat = 0.5
     static private let syrups = [
-        ParfaitPart(.Syrup, "ピンク系１.png", syrupRatio, "drum1.wav"),
+        ParfaitPart(.Syrup, "ピンク系１.png", syrupRatio, "drum4.wav"),
         ParfaitPart(.Syrup, "緑系１.png", syrupRatio, "drum2.wav"),
         ParfaitPart(.Syrup, "青系１.png", syrupRatio, "drum3.wav"),
-        ParfaitPart(.Syrup, "紫系１.png", syrupRatio, "drum4.wav"),
+        ParfaitPart(.Syrup, "紫系１.png", syrupRatio, "drum1.wav"),
         ParfaitPart(.Syrup, "モカ系１.png", syrupRatio, "drum5.wav"),
     ]
     
