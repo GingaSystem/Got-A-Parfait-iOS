@@ -177,10 +177,12 @@ class ViewController: UIViewController {
         let (audioURL, trackLength) = renderTrack(parts: currentParts)
         
         // ビデオトラック作成
+        let width = 800.0
+        let height = width / 2302 * 3720
         renderVideo(
             image: drawGlassAndContents(
-                contentSize: CGSize(width: 952, height: 2000),  // x 1.3
-                glassSize: CGSize(width: 952, height: 1538)),  // 2302:3720
+                contentSize: CGSize(width: width, height: height * 1.3),  // x 1.3
+                glassSize: CGSize(width: width, height: height)),  // 2302:3720
             length: trackLength,
             cb: {
                 (videoURL: URL) -> Void in
